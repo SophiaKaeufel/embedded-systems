@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AmpelTKreuzung_MiKoSo", "AmpelTKreuzung_MiKoSo\AmpelTKreuzung_MiKoSo.cproj", "{1BE2A1C0-F166-49C0-AC1C-3040B4567470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BE2A1C0-F166-49C0-AC1C-3040B4567470}.Debug|AVR.ActiveCfg = Debug|AVR
+		{1BE2A1C0-F166-49C0-AC1C-3040B4567470}.Debug|AVR.Build.0 = Debug|AVR
+		{1BE2A1C0-F166-49C0-AC1C-3040B4567470}.Release|AVR.ActiveCfg = Release|AVR
+		{1BE2A1C0-F166-49C0-AC1C-3040B4567470}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

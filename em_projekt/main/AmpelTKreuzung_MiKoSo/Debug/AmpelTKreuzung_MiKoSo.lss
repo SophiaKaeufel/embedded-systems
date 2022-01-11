@@ -1,0 +1,1962 @@
+
+AmpelTKreuzung_MiKoSo.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000014  00800100  0000125c  000012f0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000125c  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000005d  00800114  00800114  00001304  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00001304  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 000000f0  00000000  00000000  00001334  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000017a6  00000000  00000000  00001424  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000003a3  00000000  00000000  00002bca  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000005a1  00000000  00000000  00002f6d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000278  00000000  00000000  00003510  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000942  00000000  00000000  00003788  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000073d  00000000  00000000  000040ca  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 000000e0  00000000  00000000  00004807  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	0c 94 cc 03 	jmp	0x798	; 0x798 <__ctors_end>
+       4:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+       8:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+       c:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      10:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      14:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      18:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      1c:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      20:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      24:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      28:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      2c:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      30:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      34:	0c 94 f4 04 	jmp	0x9e8	; 0x9e8 <__vector_13>
+      38:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      3c:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      40:	0c 94 3d 04 	jmp	0x87a	; 0x87a <__vector_16>
+      44:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      48:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      4c:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      50:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      54:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      58:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      5c:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      60:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      64:	0c 94 e9 03 	jmp	0x7d2	; 0x7d2 <__bad_interrupt>
+      68:	e4 07       	cpc	r30, r20
+      6a:	bc 07       	cpc	r27, r28
+      6c:	c1 07       	cpc	r28, r17
+      6e:	c6 07       	cpc	r28, r22
+      70:	cb 07       	cpc	r28, r27
+      72:	d0 07       	cpc	r29, r16
+      74:	d5 07       	cpc	r29, r21
+      76:	da 07       	cpc	r29, r26
+      78:	df 07       	cpc	r29, r31
+
+0000007a <OutputSunday>:
+      7a:	0a 09 53 75 6e 64 61 79 3a 20 00                    ..Sunday: .
+
+00000085 <OutputSaturday>:
+      85:	0a 09 53 61 74 75 72 64 61 79 3a 20 00              ..Saturday: .
+
+00000092 <OutputWeekday>:
+      92:	09 4d 6f 6e 64 61 79 20 2d 20 46 72 69 64 61 79     .Monday - Friday
+      a2:	3a 20 00                                            : .
+
+000000a5 <OutputAnd>:
+      a5:	20 61 6e 64 20 00                                    and .
+
+000000ab <OutputTo>:
+      ab:	20 74 6f 20 00                                       to .
+
+000000b0 <RemoteOp>:
+      b0:	0a 0a 52 65 6d 6f 74 65 5f 66 72 65 71 75 65 6e     ..Remote_frequen
+      c0:	63 79 20 6d 6f 64 75 73 3a 0a 00                    cy modus:..
+
+000000cb <LowOp>:
+      cb:	0a 0a 4c 6f 77 5f 66 72 65 71 75 65 6e 63 79 20     ..Low_frequency 
+      db:	6d 6f 64 75 73 3a 0a 00                             modus:..
+
+000000e3 <HighOp>:
+      e3:	0a 48 69 67 68 5f 66 72 65 71 75 65 6e 63 79 5f     .High_frequency_
+      f3:	6d 6f 64 75 73 3a 0a 00                             modus:..
+
+000000fb <OutputOperationlist>:
+      fb:	0a 44 69 65 20 42 65 74 72 69 65 62 73 61 62 6c     .Die Betriebsabl
+     10b:	61 75 66 6c 69 73 74 65 20 64 65 73 20 67 65 77     aufliste des gew
+     11b:	61 65 68 6c 74 65 6e 20 41 6d 70 65 6c 73 79 73     aehlten Ampelsys
+     12b:	74 65 6d 73 20 69 73 74 3a 20 0a 00                 tems ist: ..
+
+00000137 <firmware_message_menu>:
+     137:	09 46 69 72 6d 77 61 72 65 0a 31 2e 20 46 69 72     .Firmware.1. Fir
+     147:	6d 77 61 72 65 2d 56 65 72 73 69 6f 6e 20 61 75     mware-Version au
+     157:	73 6c 65 73 65 6e 0a 32 2e 20 46 69 72 6d 77 61     slesen.2. Firmwa
+     167:	72 65 2d 55 70 64 61 74 65 0a 33 2e 20 5a 75 72     re-Update.3. Zur
+     177:	75 65 63 6b 20 7a 75 6d 20 48 61 75 70 74 6d 65     ueck zum Hauptme
+     187:	6e 75 65 0a 0a 57 61 65 68 6c 65 6e 20 53 69 65     nue..Waehlen Sie
+     197:	20 65 69 6e 65 20 4e 75 6d 6d 65 72 20 61 75 73      eine Nummer aus
+     1a7:	3a 20 00                                            : .
+
+000001aa <Time_Error_Message>:
+     1aa:	0a 46 65 68 6c 65 72 20 62 65 69 6d 20 41 75 73     .Fehler beim Aus
+     1ba:	6c 65 73 65 6e 20 76 6f 6e 20 55 68 72 7a 65 69     lesen von Uhrzei
+     1ca:	74 20 75 6e 64 20 44 61 74 75 6d 0a 0a 5a 75 72     t und Datum..Zur
+     1da:	75 65 63 6b 20 7a 75 20 46 65 68 6c 65 72 6d 65     ueck zu Fehlerme
+     1ea:	6c 64 75 6e 67 65 6e 20 6d 69 74 20 30 3a 20 00     ldungen mit 0: .
+
+000001fa <SW_Error_Message>:
+     1fa:	0a 52 65 73 65 74 20 64 75 72 63 68 20 73 6f 66     .Reset durch sof
+     20a:	74 77 61 72 65 2d 46 65 68 6c 65 72 20 61 75 73     tware-Fehler aus
+     21a:	67 65 66 75 65 68 72 74 0a 0a 5a 75 72 75 65 63     gefuehrt..Zuruec
+     22a:	6b 20 7a 75 20 46 65 68 6c 65 72 6d 65 6c 64 75     k zu Fehlermeldu
+     23a:	6e 67 65 6e 20 6d 69 74 20 30 3a 20 00              ngen mit 0: .
+
+00000247 <Stack_Error_Message>:
+     247:	0a 53 74 61 63 6b 2d 4f 76 65 72 66 6c 6f 77 20     .Stack-Overflow 
+     257:	64 69 61 67 6e 6f 73 74 69 7a 69 65 72 74 0a 0a     diagnostiziert..
+     267:	5a 75 72 75 65 63 6b 20 7a 75 20 46 65 68 6c 65     Zurueck zu Fehle
+     277:	72 6d 65 6c 64 75 6e 67 65 6e 20 6d 69 74 20 30     rmeldungen mit 0
+     287:	3a 20 00                                            : .
+
+0000028a <SRAM_Error_Message>:
+     28a:	0a 46 65 68 6c 65 72 20 62 65 69 20 64 65 72 20     .Fehler bei der 
+     29a:	55 65 62 65 72 70 72 75 65 66 75 6e 67 20 64 65     Ueberpruefung de
+     2aa:	73 20 53 52 41 4d 20 64 69 61 67 6e 6f 73 74 69     s SRAM diagnosti
+     2ba:	7a 69 65 72 74 0a 0a 5a 75 72 75 65 63 6b 20 7a     ziert..Zurueck z
+     2ca:	75 20 46 65 68 6c 65 72 6d 65 6c 64 75 6e 67 65     u Fehlermeldunge
+     2da:	6e 20 6d 69 74 20 30 3a 20 00                       n mit 0: .
+
+000002e4 <Flash_Error_Message>:
+     2e4:	0a 46 65 68 6c 65 72 20 62 65 69 20 64 65 72 20     .Fehler bei der 
+     2f4:	55 65 62 65 72 70 72 75 65 66 75 6e 67 20 64 65     Ueberpruefung de
+     304:	73 20 46 6c 61 73 68 2d 53 70 65 69 63 68 65 72     s Flash-Speicher
+     314:	73 0a 64 69 61 67 6e 6f 73 74 69 7a 69 65 72 74     s.diagnostiziert
+     324:	0a 0a 5a 75 72 75 65 63 6b 20 7a 75 20 46 65 68     ..Zurueck zu Feh
+     334:	6c 65 72 6d 65 6c 64 75 6e 67 65 6e 20 6d 69 74     lermeldungen mit
+     344:	20 30 3a 20 00                                       0: .
+
+00000349 <Red_Light_SR_Message>:
+     349:	0a 55 65 62 65 72 77 61 63 68 75 6e 67 73 66 65     .Ueberwachungsfe
+     359:	68 6c 65 72 20 61 75 66 20 64 65 6d 20 73 70 61     hler auf dem spa
+     369:	6e 6e 75 6e 67 73 66 75 65 68 72 65 6e 64 65 6e     nnungsfuehrenden
+     379:	0a 54 65 69 6c 20 64 65 73 20 72 6f 74 65 6e 20     .Teil des roten 
+     389:	4c 69 63 68 74 65 73 20 61 75 66 20 64 65 72 20     Lichtes auf der 
+     399:	4e 65 62 65 6e 73 74 72 61 73 73 65 0a 0a 5a 75     Nebenstrasse..Zu
+     3a9:	72 75 65 63 6b 20 7a 75 20 46 65 68 6c 65 72 6d     rueck zu Fehlerm
+     3b9:	65 6c 64 75 6e 67 65 6e 20 6d 69 74 20 30 3a 20     eldungen mit 0: 
+	...
+
+000003ca <Red_Light_MR_Message>:
+     3ca:	0a 55 65 62 65 72 77 61 63 68 75 6e 67 73 66 65     .Ueberwachungsfe
+     3da:	68 6c 65 72 20 61 75 66 20 64 65 6d 20 73 70 61     hler auf dem spa
+     3ea:	6e 6e 75 6e 67 73 66 75 65 68 72 65 6e 64 65 6e     nnungsfuehrenden
+     3fa:	0a 54 65 69 6c 20 64 65 73 20 72 6f 74 65 6e 20     .Teil des roten 
+     40a:	4c 69 63 68 74 65 73 20 61 75 66 20 64 65 72 20     Lichtes auf der 
+     41a:	48 61 75 70 74 73 74 72 61 73 73 65 0a 0a 5a 75     Hauptstrasse..Zu
+     42a:	72 75 65 63 6b 20 7a 75 20 46 65 68 6c 65 72 6d     rueck zu Fehlerm
+     43a:	65 6c 64 75 6e 67 65 6e 20 6d 69 74 20 30 3a 20     eldungen mit 0: 
+	...
+
+0000044b <No_Error_Message>:
+     44b:	0a 4b 65 69 6e 20 46 65 68 6c 65 72 20 64 69 61     .Kein Fehler dia
+     45b:	67 6e 6f 73 74 69 7a 69 65 72 74 0a 0a 5a 75 72     gnostiziert..Zur
+     46b:	75 65 63 6b 20 7a 75 20 46 65 68 6c 65 72 6d 65     ueck zu Fehlerme
+     47b:	6c 64 75 6e 67 65 6e 20 6d 69 74 20 30 3a 20 00     ldungen mit 0: .
+
+0000048b <errors_message_menu>:
+     48b:	09 46 65 68 6c 65 72 6d 65 6c 64 75 6e 67 65 6e     .Fehlermeldungen
+     49b:	0a 0a 46 65 68 6c 65 72 6e 61 6d 65 09 43 6f 64     ..Fehlername.Cod
+     4ab:	65 0a 31 2e 20 4e 6f 5f 65 72 72 6f 72 09 30 78     e.1. No_error.0x
+     4bb:	30 30 0a 32 2e 20 52 65 64 5f 6c 69 67 68 74 5f     00.2. Red_light_
+     4cb:	4d 52 09 30 78 31 30 0a 33 2e 20 52 65 64 5f 6c     MR.0x10.3. Red_l
+     4db:	69 67 68 74 5f 53 52 09 30 78 31 31 0a 34 2e 20     ight_SR.0x11.4. 
+     4eb:	46 6c 61 73 68 5f 65 72 72 6f 72 09 30 78 32 30     Flash_error.0x20
+     4fb:	0a 35 2e 20 53 52 41 4d 5f 65 72 72 6f 72 09 30     .5. SRAM_error.0
+     50b:	78 32 31 0a 36 2e 20 53 74 61 63 6b 5f 65 72 72     x21.6. Stack_err
+     51b:	6f 72 09 30 78 32 32 0a 37 2e 20 53 57 5f 45 72     or.0x22.7. SW_Er
+     52b:	72 6f 72 09 30 78 38 30 0a 38 2e 20 54 69 6d 65     ror.0x80.8. Time
+     53b:	5f 65 72 72 6f 72 09 30 78 38 31 0a 39 2e 20 5a     _error.0x81.9. Z
+     54b:	75 72 75 65 63 6b 20 7a 75 6d 20 48 61 75 70 74     urueck zum Haupt
+     55b:	6d 65 6e 75 65 0a 0a 57 61 65 68 6c 65 6e 20 53     menue..Waehlen S
+     56b:	69 65 20 65 69 6e 65 20 4e 75 6d 6d 65 72 20 61     ie eine Nummer a
+     57b:	75 73 3a 20 00                                      us: .
+
+00000580 <install_message_menu>:
+     580:	09 20 41 6d 70 65 6c 20 69 6e 73 74 61 6c 6c 69     . Ampel installi
+     590:	65 72 65 6e 5c 64 65 69 6e 73 74 61 6c 6c 69 65     eren\deinstallie
+     5a0:	72 65 6e 0a 0a 31 2e 20 41 6d 70 65 6c 20 69 6e     ren..1. Ampel in
+     5b0:	73 74 61 6c 6c 69 65 72 65 6e 0a 32 2e 20 41 6d     stallieren.2. Am
+     5c0:	70 65 6c 20 64 65 69 6e 73 74 61 6c 6c 69 65 72     pel deinstallier
+     5d0:	65 6e 0a 33 2e 20 5a 75 72 75 65 63 6b 20 7a 75     en.3. Zurueck zu
+     5e0:	6d 20 48 61 75 70 74 6d 65 6e 75 65 0a 0a 57 61     m Hauptmenue..Wa
+     5f0:	65 68 6c 65 6e 20 53 69 65 20 65 69 6e 65 20 4e     ehlen Sie eine N
+     600:	75 6d 6d 65 72 20 61 75 73 3a 20 00                 ummer aus: .
+
+0000060c <configuration_message_menu>:
+     60c:	09 41 6d 70 65 6c 2d 4b 6f 6e 66 69 67 75 72 61     .Ampel-Konfigura
+     61c:	74 69 6f 6e 0a 0a 31 2e 20 4b 65 6e 6e 75 6e 67     tion..1. Kennung
+     62c:	20 61 65 6e 64 65 72 6e 0a 32 2e 20 5a 75 73 74      aendern.2. Zust
+     63c:	61 6e 64 73 61 62 66 72 61 67 65 0a 33 2e 20 5a     andsabfrage.3. Z
+     64c:	75 73 74 61 6e 64 20 61 65 6e 64 65 72 6e 0a 34     ustand aendern.4
+     65c:	2e 20 42 65 74 72 69 65 62 73 61 62 6c 61 75 66     . Betriebsablauf
+     66c:	20 61 75 73 6c 65 73 65 6e 0a 35 2e 20 42 65 74      auslesen.5. Bet
+     67c:	72 69 65 62 73 61 62 6c 61 75 66 20 61 65 6e 64     riebsablauf aend
+     68c:	65 72 6e 0a 36 2e 20 44 61 74 75 6d 5c 55 68 72     ern.6. Datum\Uhr
+     69c:	7a 65 69 74 20 61 75 73 6c 65 73 65 6e 0a 37 2e     zeit auslesen.7.
+     6ac:	20 44 61 74 75 6d 5c 55 68 72 7a 65 69 74 20 61      Datum\Uhrzeit a
+     6bc:	65 6e 64 65 72 6e 0a 38 2e 20 5a 75 72 75 65 63     endern.8. Zuruec
+     6cc:	6b 20 7a 75 6d 20 48 61 75 70 74 6d 65 6e 75 65     k zum Hauptmenue
+     6dc:	0a 0a 57 61 65 68 6c 65 6e 20 53 69 65 20 65 69     ..Waehlen Sie ei
+     6ec:	6e 65 20 4e 75 6d 6d 65 72 20 61 75 73 3a 20 00     ne Nummer aus: .
+
+000006fc <mainMenu_message_menu>:
+     6fc:	0a 09 41 6d 70 65 6c 2d 4c 65 69 74 73 79 73 74     ..Ampel-Leitsyst
+     70c:	65 6d 6d 65 6e 75 65 0a 31 2e 20 41 6d 70 65 6c     emmenue.1. Ampel
+     71c:	2d 4b 6f 6e 66 69 67 75 72 61 74 69 6f 6e 0a 32     -Konfiguration.2
+     72c:	2e 20 41 6d 70 65 6c 20 69 6e 73 74 61 6c 6c 69     . Ampel installi
+     73c:	65 72 65 6e 5c 64 65 69 6e 73 74 61 6c 6c 69 65     eren\deinstallie
+     74c:	72 65 6e 0a 33 2e 20 46 65 68 6c 65 72 6d 65 6c     ren.3. Fehlermel
+     75c:	64 75 6e 67 65 6e 20 61 75 73 6c 65 73 65 6e 0a     dungen auslesen.
+     76c:	34 2e 20 46 69 72 6d 77 61 72 65 0a 0a 57 61 65     4. Firmware..Wae
+     77c:	68 6c 65 6e 20 53 69 65 20 65 69 6e 65 20 4e 75     hlen Sie eine Nu
+     78c:	6d 6d 65 72 20 61 75 73 3a 20 00 00                 mmer aus: ..
+
+00000798 <__ctors_end>:
+     798:	11 24       	eor	r1, r1
+     79a:	1f be       	out	0x3f, r1	; 63
+     79c:	cf ef       	ldi	r28, 0xFF	; 255
+     79e:	d8 e0       	ldi	r29, 0x08	; 8
+     7a0:	de bf       	out	0x3e, r29	; 62
+     7a2:	cd bf       	out	0x3d, r28	; 61
+
+000007a4 <__do_copy_data>:
+     7a4:	11 e0       	ldi	r17, 0x01	; 1
+     7a6:	a0 e0       	ldi	r26, 0x00	; 0
+     7a8:	b1 e0       	ldi	r27, 0x01	; 1
+     7aa:	ec e5       	ldi	r30, 0x5C	; 92
+     7ac:	f2 e1       	ldi	r31, 0x12	; 18
+     7ae:	02 c0       	rjmp	.+4      	; 0x7b4 <__do_copy_data+0x10>
+     7b0:	05 90       	lpm	r0, Z+
+     7b2:	0d 92       	st	X+, r0
+     7b4:	a4 31       	cpi	r26, 0x14	; 20
+     7b6:	b1 07       	cpc	r27, r17
+     7b8:	d9 f7       	brne	.-10     	; 0x7b0 <__do_copy_data+0xc>
+
+000007ba <__do_clear_bss>:
+     7ba:	21 e0       	ldi	r18, 0x01	; 1
+     7bc:	a4 e1       	ldi	r26, 0x14	; 20
+     7be:	b1 e0       	ldi	r27, 0x01	; 1
+     7c0:	01 c0       	rjmp	.+2      	; 0x7c4 <.do_clear_bss_start>
+
+000007c2 <.do_clear_bss_loop>:
+     7c2:	1d 92       	st	X+, r1
+
+000007c4 <.do_clear_bss_start>:
+     7c4:	a1 37       	cpi	r26, 0x71	; 113
+     7c6:	b2 07       	cpc	r27, r18
+     7c8:	e1 f7       	brne	.-8      	; 0x7c2 <.do_clear_bss_loop>
+     7ca:	0e 94 e7 07 	call	0xfce	; 0xfce <main>
+     7ce:	0c 94 2c 09 	jmp	0x1258	; 0x1258 <_exit>
+
+000007d2 <__bad_interrupt>:
+     7d2:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000007d6 <taster>:
+#include "uart.h"
+
+void high();
+	
+void taster(){
+	if((PIND & (1<<PIND7)) && button == 0){
+     7d6:	4f 9b       	sbis	0x09, 7	; 9
+     7d8:	07 c0       	rjmp	.+14     	; 0x7e8 <taster+0x12>
+     7da:	80 91 1b 01 	lds	r24, 0x011B
+     7de:	81 11       	cpse	r24, r1
+     7e0:	03 c0       	rjmp	.+6      	; 0x7e8 <taster+0x12>
+		button = 1;
+     7e2:	81 e0       	ldi	r24, 0x01	; 1
+     7e4:	80 93 1b 01 	sts	0x011B, r24
+	}
+	
+	if(button == 1){
+     7e8:	80 91 1b 01 	lds	r24, 0x011B
+     7ec:	81 30       	cpi	r24, 0x01	; 1
+     7ee:	09 f0       	breq	.+2      	; 0x7f2 <taster+0x1c>
+     7f0:	43 c0       	rjmp	.+134    	; 0x878 <taster+0xa2>
+		button = 0;
+     7f2:	10 92 1b 01 	sts	0x011B, r1
+		cli();
+     7f6:	f8 94       	cli
+		
+		HS_GRUEN_AUS;
+     7f8:	2a 98       	cbi	0x05, 2	; 5
+		HS_GELB_AN;
+     7fa:	29 9a       	sbi	0x05, 1	; 5
+		NS_GELB_AN;
+     7fc:	41 9a       	sbi	0x08, 1	; 8
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     7fe:	2f ef       	ldi	r18, 0xFF	; 255
+     800:	87 ea       	ldi	r24, 0xA7	; 167
+     802:	91 e6       	ldi	r25, 0x61	; 97
+     804:	21 50       	subi	r18, 0x01	; 1
+     806:	80 40       	sbci	r24, 0x00	; 0
+     808:	90 40       	sbci	r25, 0x00	; 0
+     80a:	e1 f7       	brne	.-8      	; 0x804 <taster+0x2e>
+     80c:	00 c0       	rjmp	.+0      	; 0x80e <taster+0x38>
+     80e:	00 00       	nop
+		
+		_delay_ms(2000);
+		HS_GELB_AUS;
+     810:	29 98       	cbi	0x05, 1	; 5
+		HS_ROT_AN;
+     812:	28 9a       	sbi	0x05, 0	; 5
+		
+		NS_ROT_GELB_AUS;
+     814:	88 b1       	in	r24, 0x08	; 8
+     816:	8c 7f       	andi	r24, 0xFC	; 252
+     818:	88 b9       	out	0x08, r24	; 8
+		NS_GRUEN_AN;
+     81a:	42 9a       	sbi	0x08, 2	; 8
+     81c:	2f ef       	ldi	r18, 0xFF	; 255
+     81e:	8b e7       	ldi	r24, 0x7B	; 123
+     820:	92 e9       	ldi	r25, 0x92	; 146
+     822:	21 50       	subi	r18, 0x01	; 1
+     824:	80 40       	sbci	r24, 0x00	; 0
+     826:	90 40       	sbci	r25, 0x00	; 0
+     828:	e1 f7       	brne	.-8      	; 0x822 <taster+0x4c>
+     82a:	00 c0       	rjmp	.+0      	; 0x82c <taster+0x56>
+     82c:	00 00       	nop
+		_delay_ms(3000);
+		
+		NS_GRUEN_AUS;
+     82e:	42 98       	cbi	0x08, 2	; 8
+		NS_GELB_AN;
+     830:	41 9a       	sbi	0x08, 1	; 8
+     832:	2f ef       	ldi	r18, 0xFF	; 255
+     834:	87 ea       	ldi	r24, 0xA7	; 167
+     836:	91 e6       	ldi	r25, 0x61	; 97
+     838:	21 50       	subi	r18, 0x01	; 1
+     83a:	80 40       	sbci	r24, 0x00	; 0
+     83c:	90 40       	sbci	r25, 0x00	; 0
+     83e:	e1 f7       	brne	.-8      	; 0x838 <taster+0x62>
+     840:	00 c0       	rjmp	.+0      	; 0x842 <taster+0x6c>
+     842:	00 00       	nop
+		_delay_ms(2000);
+		NS_GELB_AUS;
+     844:	41 98       	cbi	0x08, 1	; 8
+		NS_ROT_AN;
+     846:	40 9a       	sbi	0x08, 0	; 8
+     848:	2f ef       	ldi	r18, 0xFF	; 255
+     84a:	8f e4       	ldi	r24, 0x4F	; 79
+     84c:	93 ec       	ldi	r25, 0xC3	; 195
+     84e:	21 50       	subi	r18, 0x01	; 1
+     850:	80 40       	sbci	r24, 0x00	; 0
+     852:	90 40       	sbci	r25, 0x00	; 0
+     854:	e1 f7       	brne	.-8      	; 0x84e <taster+0x78>
+     856:	00 c0       	rjmp	.+0      	; 0x858 <taster+0x82>
+     858:	00 00       	nop
+		_delay_ms(4000);
+		HS_GELB_AN;
+     85a:	29 9a       	sbi	0x05, 1	; 5
+     85c:	2f ef       	ldi	r18, 0xFF	; 255
+     85e:	87 ea       	ldi	r24, 0xA7	; 167
+     860:	91 e6       	ldi	r25, 0x61	; 97
+     862:	21 50       	subi	r18, 0x01	; 1
+     864:	80 40       	sbci	r24, 0x00	; 0
+     866:	90 40       	sbci	r25, 0x00	; 0
+     868:	e1 f7       	brne	.-8      	; 0x862 <taster+0x8c>
+     86a:	00 c0       	rjmp	.+0      	; 0x86c <taster+0x96>
+     86c:	00 00       	nop
+		_delay_ms(2000);
+		HS_ROT_GELB_AUS;
+     86e:	85 b1       	in	r24, 0x05	; 5
+     870:	8c 7f       	andi	r24, 0xFC	; 252
+     872:	85 b9       	out	0x05, r24	; 5
+		HS_GRUEN_AN;
+     874:	2a 9a       	sbi	0x05, 2	; 5
+		
+		sei();
+     876:	78 94       	sei
+     878:	08 95       	ret
+
+0000087a <__vector_16>:
+};
+	
+volatile struct timer timer_t[NUMOFTIMER];
+
+
+ISR(TIMER0_OVF_vect){
+     87a:	1f 92       	push	r1
+     87c:	0f 92       	push	r0
+     87e:	0f b6       	in	r0, 0x3f	; 63
+     880:	0f 92       	push	r0
+     882:	11 24       	eor	r1, r1
+     884:	1f 93       	push	r17
+     886:	2f 93       	push	r18
+     888:	3f 93       	push	r19
+     88a:	4f 93       	push	r20
+     88c:	5f 93       	push	r21
+     88e:	6f 93       	push	r22
+     890:	7f 93       	push	r23
+     892:	8f 93       	push	r24
+     894:	9f 93       	push	r25
+     896:	af 93       	push	r26
+     898:	bf 93       	push	r27
+     89a:	cf 93       	push	r28
+     89c:	df 93       	push	r29
+     89e:	ef 93       	push	r30
+     8a0:	ff 93       	push	r31
+	TCNT0 = 6;
+     8a2:	86 e0       	ldi	r24, 0x06	; 6
+     8a4:	86 bd       	out	0x26, r24	; 38
+     8a6:	c0 e0       	ldi	r28, 0x00	; 0
+     8a8:	d0 e0       	ldi	r29, 0x00	; 0
+	for(uint8_t i = 0; i< NUMOFTIMER; i++){
+		if(timer_t[i].run == 1){
+     8aa:	1f e0       	ldi	r17, 0x0F	; 15
+     8ac:	1c 9f       	mul	r17, r28
+     8ae:	f0 01       	movw	r30, r0
+     8b0:	1d 9f       	mul	r17, r29
+     8b2:	f0 0d       	add	r31, r0
+     8b4:	11 24       	eor	r1, r1
+     8b6:	e0 5e       	subi	r30, 0xE0	; 224
+     8b8:	fe 4f       	sbci	r31, 0xFE	; 254
+     8ba:	80 85       	ldd	r24, Z+8	; 0x08
+     8bc:	91 85       	ldd	r25, Z+9	; 0x09
+     8be:	a2 85       	ldd	r26, Z+10	; 0x0a
+     8c0:	b3 85       	ldd	r27, Z+11	; 0x0b
+     8c2:	01 97       	sbiw	r24, 0x01	; 1
+     8c4:	a1 05       	cpc	r26, r1
+     8c6:	b1 05       	cpc	r27, r1
+     8c8:	b1 f5       	brne	.+108    	; 0x936 <__stack+0x37>
+			timer_t[i].timerCounter++;
+     8ca:	1c 9f       	mul	r17, r28
+     8cc:	f0 01       	movw	r30, r0
+     8ce:	1d 9f       	mul	r17, r29
+     8d0:	f0 0d       	add	r31, r0
+     8d2:	11 24       	eor	r1, r1
+     8d4:	e0 5e       	subi	r30, 0xE0	; 224
+     8d6:	fe 4f       	sbci	r31, 0xFE	; 254
+     8d8:	84 81       	ldd	r24, Z+4	; 0x04
+     8da:	95 81       	ldd	r25, Z+5	; 0x05
+     8dc:	a6 81       	ldd	r26, Z+6	; 0x06
+     8de:	b7 81       	ldd	r27, Z+7	; 0x07
+     8e0:	01 96       	adiw	r24, 0x01	; 1
+     8e2:	a1 1d       	adc	r26, r1
+     8e4:	b1 1d       	adc	r27, r1
+     8e6:	84 83       	std	Z+4, r24	; 0x04
+     8e8:	95 83       	std	Z+5, r25	; 0x05
+     8ea:	a6 83       	std	Z+6, r26	; 0x06
+     8ec:	b7 83       	std	Z+7, r27	; 0x07
+			if(timer_t[i].timerCounter >= timer_t[i].duration){
+     8ee:	44 81       	ldd	r20, Z+4	; 0x04
+     8f0:	55 81       	ldd	r21, Z+5	; 0x05
+     8f2:	66 81       	ldd	r22, Z+6	; 0x06
+     8f4:	77 81       	ldd	r23, Z+7	; 0x07
+     8f6:	80 81       	ld	r24, Z
+     8f8:	91 81       	ldd	r25, Z+1	; 0x01
+     8fa:	a2 81       	ldd	r26, Z+2	; 0x02
+     8fc:	b3 81       	ldd	r27, Z+3	; 0x03
+     8fe:	48 17       	cp	r20, r24
+     900:	59 07       	cpc	r21, r25
+     902:	6a 07       	cpc	r22, r26
+     904:	7b 07       	cpc	r23, r27
+     906:	b8 f0       	brcs	.+46     	; 0x936 <__stack+0x37>
+				timer_t[i].timerCounter = 0;
+     908:	1c 9f       	mul	r17, r28
+     90a:	f0 01       	movw	r30, r0
+     90c:	1d 9f       	mul	r17, r29
+     90e:	f0 0d       	add	r31, r0
+     910:	11 24       	eor	r1, r1
+     912:	e0 5e       	subi	r30, 0xE0	; 224
+     914:	fe 4f       	sbci	r31, 0xFE	; 254
+     916:	14 82       	std	Z+4, r1	; 0x04
+     918:	15 82       	std	Z+5, r1	; 0x05
+     91a:	16 82       	std	Z+6, r1	; 0x06
+     91c:	17 82       	std	Z+7, r1	; 0x07
+				sei();
+     91e:	78 94       	sei
+				timer_t[i].callback();
+     920:	1c 9f       	mul	r17, r28
+     922:	f0 01       	movw	r30, r0
+     924:	1d 9f       	mul	r17, r29
+     926:	f0 0d       	add	r31, r0
+     928:	11 24       	eor	r1, r1
+     92a:	e0 5e       	subi	r30, 0xE0	; 224
+     92c:	fe 4f       	sbci	r31, 0xFE	; 254
+     92e:	05 84       	ldd	r0, Z+13	; 0x0d
+     930:	f6 85       	ldd	r31, Z+14	; 0x0e
+     932:	e0 2d       	mov	r30, r0
+     934:	09 95       	icall
+     936:	21 96       	adiw	r28, 0x01	; 1
+volatile struct timer timer_t[NUMOFTIMER];
+
+
+ISR(TIMER0_OVF_vect){
+	TCNT0 = 6;
+	for(uint8_t i = 0; i< NUMOFTIMER; i++){
+     938:	c5 30       	cpi	r28, 0x05	; 5
+     93a:	d1 05       	cpc	r29, r1
+     93c:	09 f0       	breq	.+2      	; 0x940 <__stack+0x41>
+     93e:	b6 cf       	rjmp	.-148    	; 0x8ac <__vector_16+0x32>
+				timer_t[i].callback();
+			}
+		}
+	}
+	
+}
+     940:	ff 91       	pop	r31
+     942:	ef 91       	pop	r30
+     944:	df 91       	pop	r29
+     946:	cf 91       	pop	r28
+     948:	bf 91       	pop	r27
+     94a:	af 91       	pop	r26
+     94c:	9f 91       	pop	r25
+     94e:	8f 91       	pop	r24
+     950:	7f 91       	pop	r23
+     952:	6f 91       	pop	r22
+     954:	5f 91       	pop	r21
+     956:	4f 91       	pop	r20
+     958:	3f 91       	pop	r19
+     95a:	2f 91       	pop	r18
+     95c:	1f 91       	pop	r17
+     95e:	0f 90       	pop	r0
+     960:	0f be       	out	0x3f, r0	; 63
+     962:	0f 90       	pop	r0
+     964:	1f 90       	pop	r1
+     966:	18 95       	reti
+
+00000968 <init>:
+//Timer
+#define TIMER_24H	0
+
+void init(){
+	//Ampeln auf Hauptstraﬂe
+	DDRB |= (1<<DDB0);	//rot
+     968:	20 9a       	sbi	0x04, 0	; 4
+	DDRB |= (1<<DDB1);	//gelb	
+     96a:	21 9a       	sbi	0x04, 1	; 4
+	DDRB |= (1<<DDB2);	//gruen
+     96c:	22 9a       	sbi	0x04, 2	; 4
+	//Ampeln auf Nebenstraﬂe und Fussgaenger
+	DDRC |= (1<<DDC0);	//rot
+     96e:	38 9a       	sbi	0x07, 0	; 7
+	DDRC |= (1<<DDC1);	//gelb
+     970:	39 9a       	sbi	0x07, 1	; 7
+	DDRC |= (1<<DDC2);	//gruen
+     972:	3a 9a       	sbi	0x07, 2	; 7
+	//Taster Fussgaengerampel
+	//DDRD |= (1<<DDD7);
+	//Taster f¸r Magnetsensoratrappe
+	DDRD |= (1<<DDD6);
+     974:	56 9a       	sbi	0x0a, 6	; 10
+	
+	//Ampeln auf Hauptstraﬂe
+	PORTB &= (1<<PORTB0);	//rot
+     976:	85 b1       	in	r24, 0x05	; 5
+     978:	81 70       	andi	r24, 0x01	; 1
+     97a:	85 b9       	out	0x05, r24	; 5
+	PORTB &= (1<<PORTB1);	//gelb
+     97c:	85 b1       	in	r24, 0x05	; 5
+     97e:	82 70       	andi	r24, 0x02	; 2
+     980:	85 b9       	out	0x05, r24	; 5
+	PORTB &= (1<<PORTB2);	//gruen
+     982:	85 b1       	in	r24, 0x05	; 5
+     984:	84 70       	andi	r24, 0x04	; 4
+     986:	85 b9       	out	0x05, r24	; 5
+	//Ampeln auf Nebenstraﬂe und Fussgaenger
+	PORTC &= (1<<PORTC0);	//rot
+     988:	88 b1       	in	r24, 0x08	; 8
+     98a:	81 70       	andi	r24, 0x01	; 1
+     98c:	88 b9       	out	0x08, r24	; 8
+	PORTC &= (1<<PORTC1);	//gelb
+     98e:	88 b1       	in	r24, 0x08	; 8
+     990:	82 70       	andi	r24, 0x02	; 2
+     992:	88 b9       	out	0x08, r24	; 8
+	PORTC &= (1<<PORTC2);	//gruen
+     994:	88 b1       	in	r24, 0x08	; 8
+     996:	84 70       	andi	r24, 0x04	; 4
+     998:	88 b9       	out	0x08, r24	; 8
+	//Taster Fussgaengerampel
+	PORTD &= (1<<PORTD7);
+     99a:	8b b1       	in	r24, 0x0b	; 11
+     99c:	80 78       	andi	r24, 0x80	; 128
+     99e:	8b b9       	out	0x0b, r24	; 11
+	//Taster fuer Magnetsensoratrappe
+	PORTD &= (1<<PORTD6);
+     9a0:	8b b1       	in	r24, 0x0b	; 11
+     9a2:	80 74       	andi	r24, 0x40	; 64
+     9a4:	8b b9       	out	0x0b, r24	; 11
+	
+	//timer einstellen
+	TCNT0 = 6;
+     9a6:	86 e0       	ldi	r24, 0x06	; 6
+     9a8:	86 bd       	out	0x26, r24	; 38
+	TCCR0B &= ~((1<<CS02) | (1<<CS01) | (1<<CS00));
+     9aa:	85 b5       	in	r24, 0x25	; 37
+     9ac:	88 7f       	andi	r24, 0xF8	; 248
+     9ae:	85 bd       	out	0x25, r24	; 37
+	TCCR0B |= ((1<<CS01) | (1<<CS00)); //prescaler 64
+     9b0:	85 b5       	in	r24, 0x25	; 37
+     9b2:	83 60       	ori	r24, 0x03	; 3
+     9b4:	85 bd       	out	0x25, r24	; 37
+	TIMSK0 |= (1<<TOIE0);
+     9b6:	ee e6       	ldi	r30, 0x6E	; 110
+     9b8:	f0 e0       	ldi	r31, 0x00	; 0
+     9ba:	80 81       	ld	r24, Z
+     9bc:	81 60       	ori	r24, 0x01	; 1
+     9be:	80 83       	st	Z, r24
+		
+	//timer einstellen
+	TCNT1 = 9286;
+     9c0:	86 e4       	ldi	r24, 0x46	; 70
+     9c2:	94 e2       	ldi	r25, 0x24	; 36
+     9c4:	90 93 85 00 	sts	0x0085, r25
+     9c8:	80 93 84 00 	sts	0x0084, r24
+	TCCR1B &= ~((1<<CS12) | (1<<CS11) | (1<<CS10));
+     9cc:	e1 e8       	ldi	r30, 0x81	; 129
+     9ce:	f0 e0       	ldi	r31, 0x00	; 0
+     9d0:	80 81       	ld	r24, Z
+     9d2:	88 7f       	andi	r24, 0xF8	; 248
+     9d4:	80 83       	st	Z, r24
+	TCCR1B |= ((1<<CS12) | (1<<CS10)); //prescaler 1024
+     9d6:	80 81       	ld	r24, Z
+     9d8:	85 60       	ori	r24, 0x05	; 5
+     9da:	80 83       	st	Z, r24
+	TIMSK1 |= (1<<TOIE1);
+     9dc:	ef e6       	ldi	r30, 0x6F	; 111
+     9de:	f0 e0       	ldi	r31, 0x00	; 0
+     9e0:	80 81       	ld	r24, Z
+     9e2:	81 60       	ori	r24, 0x01	; 1
+     9e4:	80 83       	st	Z, r24
+     9e6:	08 95       	ret
+
+000009e8 <__vector_13>:
+
+#include <avr/interrupt.h>
+#include "timer.h"
+#include "init.h"
+
+ISR(TIMER1_OVF_vect) {
+     9e8:	1f 92       	push	r1
+     9ea:	0f 92       	push	r0
+     9ec:	0f b6       	in	r0, 0x3f	; 63
+     9ee:	0f 92       	push	r0
+     9f0:	11 24       	eor	r1, r1
+     9f2:	2f 93       	push	r18
+     9f4:	8f 93       	push	r24
+     9f6:	9f 93       	push	r25
+     9f8:	af 93       	push	r26
+     9fa:	bf 93       	push	r27
+	static uint32_t counter = 0;
+	TCNT1 = 9286;
+     9fc:	86 e4       	ldi	r24, 0x46	; 70
+     9fe:	94 e2       	ldi	r25, 0x24	; 36
+     a00:	90 93 85 00 	sts	0x0085, r25
+     a04:	80 93 84 00 	sts	0x0084, r24
+	counter++;
+     a08:	80 91 14 01 	lds	r24, 0x0114
+     a0c:	90 91 15 01 	lds	r25, 0x0115
+     a10:	a0 91 16 01 	lds	r26, 0x0116
+     a14:	b0 91 17 01 	lds	r27, 0x0117
+     a18:	01 96       	adiw	r24, 0x01	; 1
+     a1a:	a1 1d       	adc	r26, r1
+     a1c:	b1 1d       	adc	r27, r1
+	if(counter == 3600000) {
+     a1e:	80 38       	cpi	r24, 0x80	; 128
+     a20:	2e ee       	ldi	r18, 0xEE	; 238
+     a22:	92 07       	cpc	r25, r18
+     a24:	26 e3       	ldi	r18, 0x36	; 54
+     a26:	a2 07       	cpc	r26, r18
+     a28:	b1 05       	cpc	r27, r1
+     a2a:	49 f0       	breq	.+18     	; 0xa3e <__vector_13+0x56>
+#include "init.h"
+
+ISR(TIMER1_OVF_vect) {
+	static uint32_t counter = 0;
+	TCNT1 = 9286;
+	counter++;
+     a2c:	80 93 14 01 	sts	0x0114, r24
+     a30:	90 93 15 01 	sts	0x0115, r25
+     a34:	a0 93 16 01 	sts	0x0116, r26
+     a38:	b0 93 17 01 	sts	0x0117, r27
+     a3c:	13 c0       	rjmp	.+38     	; 0xa64 <__vector_13+0x7c>
+	if(counter == 3600000) {
+		counter = 0;
+     a3e:	10 92 14 01 	sts	0x0114, r1
+     a42:	10 92 15 01 	sts	0x0115, r1
+     a46:	10 92 16 01 	sts	0x0116, r1
+     a4a:	10 92 17 01 	sts	0x0117, r1
+		hour++;
+     a4e:	80 91 1c 01 	lds	r24, 0x011C
+     a52:	8f 5f       	subi	r24, 0xFF	; 255
+     a54:	80 93 1c 01 	sts	0x011C, r24
+		if(hour > 23) {
+     a58:	80 91 1c 01 	lds	r24, 0x011C
+     a5c:	88 31       	cpi	r24, 0x18	; 24
+     a5e:	10 f0       	brcs	.+4      	; 0xa64 <__vector_13+0x7c>
+			hour = 0;
+     a60:	10 92 1c 01 	sts	0x011C, r1
+		}
+	}
+}
+     a64:	bf 91       	pop	r27
+     a66:	af 91       	pop	r26
+     a68:	9f 91       	pop	r25
+     a6a:	8f 91       	pop	r24
+     a6c:	2f 91       	pop	r18
+     a6e:	0f 90       	pop	r0
+     a70:	0f be       	out	0x3f, r0	; 63
+     a72:	0f 90       	pop	r0
+     a74:	1f 90       	pop	r1
+     a76:	18 95       	reti
+
+00000a78 <USART_Init>:
+	//USART_Transmit(0x0d);
+}
+
+//Init
+void USART_Init(){
+	UBRR0H = (BAUD_CONST >> 8);
+     a78:	10 92 c5 00 	sts	0x00C5, r1
+	UBRR0L = BAUD_CONST;
+     a7c:	87 e6       	ldi	r24, 0x67	; 103
+     a7e:	80 93 c4 00 	sts	0x00C4, r24
+	UCSR0B |= (1<<RXEN0)|(1<<TXEN0);
+     a82:	e1 ec       	ldi	r30, 0xC1	; 193
+     a84:	f0 e0       	ldi	r31, 0x00	; 0
+     a86:	80 81       	ld	r24, Z
+     a88:	88 61       	ori	r24, 0x18	; 24
+     a8a:	80 83       	st	Z, r24
+     a8c:	08 95       	ret
+
+00000a8e <USART_Transmit>:
+}
+
+
+void USART_Transmit(unsigned char data){
+	while(!(UCSR0A & (1<<UDRE0))) ;
+     a8e:	e0 ec       	ldi	r30, 0xC0	; 192
+     a90:	f0 e0       	ldi	r31, 0x00	; 0
+     a92:	90 81       	ld	r25, Z
+     a94:	95 ff       	sbrs	r25, 5
+     a96:	fd cf       	rjmp	.-6      	; 0xa92 <USART_Transmit+0x4>
+	UDR0 = data;
+     a98:	80 93 c6 00 	sts	0x00C6, r24
+     a9c:	08 95       	ret
+
+00000a9e <printMenu>:
+#include <avr/pgmspace.h>
+#include "functions.h"
+	
+void USART_Transmit(unsigned char data);	
+	
+void printMenu(const char string[]){
+     a9e:	0f 93       	push	r16
+     aa0:	1f 93       	push	r17
+     aa2:	cf 93       	push	r28
+     aa4:	df 93       	push	r29
+     aa6:	ec 01       	movw	r28, r24
+	char s = '0';
+	for(uint8_t i = 0; s != '\0'; ++i){
+     aa8:	10 e0       	ldi	r17, 0x00	; 0
+		s = pgm_read_byte(string + i);
+     aaa:	fe 01       	movw	r30, r28
+     aac:	e1 0f       	add	r30, r17
+     aae:	f1 1d       	adc	r31, r1
+     ab0:	04 91       	lpm	r16, Z
+		USART_Transmit(s);
+     ab2:	80 2f       	mov	r24, r16
+     ab4:	0e 94 47 05 	call	0xa8e	; 0xa8e <USART_Transmit>
+	
+void USART_Transmit(unsigned char data);	
+	
+void printMenu(const char string[]){
+	char s = '0';
+	for(uint8_t i = 0; s != '\0'; ++i){
+     ab8:	1f 5f       	subi	r17, 0xFF	; 255
+     aba:	01 11       	cpse	r16, r1
+     abc:	f6 cf       	rjmp	.-20     	; 0xaaa <printMenu+0xc>
+		s = pgm_read_byte(string + i);
+		USART_Transmit(s);
+	}
+}
+     abe:	df 91       	pop	r29
+     ac0:	cf 91       	pop	r28
+     ac2:	1f 91       	pop	r17
+     ac4:	0f 91       	pop	r16
+     ac6:	08 95       	ret
+
+00000ac8 <printUI>:
+
+void printUI(uint32_t val){
+     ac8:	ef 92       	push	r14
+     aca:	ff 92       	push	r15
+     acc:	0f 93       	push	r16
+     ace:	1f 93       	push	r17
+     ad0:	cf 93       	push	r28
+     ad2:	df 93       	push	r29
+     ad4:	cd b7       	in	r28, 0x3d	; 61
+     ad6:	de b7       	in	r29, 0x3e	; 62
+     ad8:	2c 97       	sbiw	r28, 0x0c	; 12
+     ada:	0f b6       	in	r0, 0x3f	; 63
+     adc:	f8 94       	cli
+     ade:	de bf       	out	0x3e, r29	; 62
+     ae0:	0f be       	out	0x3f, r0	; 63
+     ae2:	cd bf       	out	0x3d, r28	; 61
+	uint8_t i;
+	char c, arr[12] = "";
+     ae4:	19 82       	std	Y+1, r1	; 0x01
+     ae6:	1a 82       	std	Y+2, r1	; 0x02
+     ae8:	1b 82       	std	Y+3, r1	; 0x03
+     aea:	1c 82       	std	Y+4, r1	; 0x04
+     aec:	fe 01       	movw	r30, r28
+     aee:	35 96       	adiw	r30, 0x05	; 5
+     af0:	28 e0       	ldi	r18, 0x08	; 8
+     af2:	df 01       	movw	r26, r30
+     af4:	1d 92       	st	X+, r1
+     af6:	2a 95       	dec	r18
+     af8:	e9 f7       	brne	.-6      	; 0xaf4 <printUI+0x2c>
+    } else if (__radix < 2 || __radix > 36) {
+	*__s = 0;
+	return __s;
+    } else {
+	extern char *__ultoa_ncheck (unsigned long, char *, unsigned char);
+	return __ultoa_ncheck (__val, __s, __radix);
+     afa:	2a e0       	ldi	r18, 0x0A	; 10
+     afc:	ae 01       	movw	r20, r28
+     afe:	4f 5f       	subi	r20, 0xFF	; 255
+     b00:	5f 4f       	sbci	r21, 0xFF	; 255
+     b02:	0e 94 fa 08 	call	0x11f4	; 0x11f4 <__ultoa_ncheck>
+     b06:	8e 01       	movw	r16, r28
+     b08:	0f 5f       	subi	r16, 0xFF	; 255
+     b0a:	1f 4f       	sbci	r17, 0xFF	; 255
+     b0c:	7e 01       	movw	r14, r28
+     b0e:	bd e0       	ldi	r27, 0x0D	; 13
+     b10:	eb 0e       	add	r14, r27
+     b12:	f1 1c       	adc	r15, r1
+	ultoa(val, arr, 10);
+	
+	//Print val
+	for(i = 0; i < 12; i++){
+		c = arr[i];
+		USART_Transmit(c);
+     b14:	f8 01       	movw	r30, r16
+     b16:	81 91       	ld	r24, Z+
+     b18:	8f 01       	movw	r16, r30
+     b1a:	0e 94 47 05 	call	0xa8e	; 0xa8e <USART_Transmit>
+	
+	//convert unsigned long data type to string data type; char *ultoa(long N, char *str, int base);
+	ultoa(val, arr, 10);
+	
+	//Print val
+	for(i = 0; i < 12; i++){
+     b1e:	0e 15       	cp	r16, r14
+     b20:	1f 05       	cpc	r17, r15
+     b22:	c1 f7       	brne	.-16     	; 0xb14 <printUI+0x4c>
+		c = arr[i];
+		USART_Transmit(c);
+	}
+	//USART_Transmit(0x0d);
+}
+     b24:	2c 96       	adiw	r28, 0x0c	; 12
+     b26:	0f b6       	in	r0, 0x3f	; 63
+     b28:	f8 94       	cli
+     b2a:	de bf       	out	0x3e, r29	; 62
+     b2c:	0f be       	out	0x3f, r0	; 63
+     b2e:	cd bf       	out	0x3d, r28	; 61
+     b30:	df 91       	pop	r29
+     b32:	cf 91       	pop	r28
+     b34:	1f 91       	pop	r17
+     b36:	0f 91       	pop	r16
+     b38:	ff 90       	pop	r15
+     b3a:	ef 90       	pop	r14
+     b3c:	08 95       	ret
+
+00000b3e <USART_Receive>:
+	while(!(UCSR0A & (1<<UDRE0))) ;
+	UDR0 = data;
+}
+
+unsigned char USART_Receive(){
+	while(!(UCSR0A & (1<<RXC0))) ;
+     b3e:	e0 ec       	ldi	r30, 0xC0	; 192
+     b40:	f0 e0       	ldi	r31, 0x00	; 0
+     b42:	80 81       	ld	r24, Z
+     b44:	88 23       	and	r24, r24
+     b46:	ec f7       	brge	.-6      	; 0xb42 <USART_Receive+0x4>
+	return UDR0;
+     b48:	80 91 c6 00 	lds	r24, 0x00C6
+}
+     b4c:	08 95       	ret
+
+00000b4e <high>:
+	}
+}
+
+void high(){
+		HS_GRUEN_AN;
+     b4e:	2a 9a       	sbi	0x05, 2	; 5
+		NS_ROT_AN;
+     b50:	40 9a       	sbi	0x08, 0	; 8
+     b52:	2f ef       	ldi	r18, 0xFF	; 255
+     b54:	33 e2       	ldi	r19, 0x23	; 35
+     b56:	84 ef       	ldi	r24, 0xF4	; 244
+     b58:	90 e0       	ldi	r25, 0x00	; 0
+     b5a:	21 50       	subi	r18, 0x01	; 1
+     b5c:	30 40       	sbci	r19, 0x00	; 0
+     b5e:	80 40       	sbci	r24, 0x00	; 0
+     b60:	90 40       	sbci	r25, 0x00	; 0
+     b62:	d9 f7       	brne	.-10     	; 0xb5a <high+0xc>
+     b64:	00 c0       	rjmp	.+0      	; 0xb66 <high+0x18>
+     b66:	00 00       	nop
+		_delay_ms(6000);		//1:10 (60s) freie HS
+		HS_GRUEN_AUS;
+     b68:	2a 98       	cbi	0x05, 2	; 5
+		HS_GELB_AN;
+     b6a:	29 9a       	sbi	0x05, 1	; 5
+		NS_ROT_GELB_AN;
+     b6c:	41 9a       	sbi	0x08, 1	; 8
+     b6e:	2f ef       	ldi	r18, 0xFF	; 255
+     b70:	37 ea       	ldi	r19, 0xA7	; 167
+     b72:	81 e6       	ldi	r24, 0x61	; 97
+     b74:	21 50       	subi	r18, 0x01	; 1
+     b76:	30 40       	sbci	r19, 0x00	; 0
+     b78:	80 40       	sbci	r24, 0x00	; 0
+     b7a:	e1 f7       	brne	.-8      	; 0xb74 <high+0x26>
+     b7c:	00 c0       	rjmp	.+0      	; 0xb7e <high+0x30>
+     b7e:	00 00       	nop
+		_delay_ms(2000);		//HS: 2s leuchtet gelb
+		HS_GELB_AUS;
+     b80:	29 98       	cbi	0x05, 1	; 5
+		HS_ROT_AN;
+     b82:	28 9a       	sbi	0x05, 0	; 5
+     b84:	9f ef       	ldi	r25, 0xFF	; 255
+     b86:	2b e7       	ldi	r18, 0x7B	; 123
+     b88:	32 e9       	ldi	r19, 0x92	; 146
+     b8a:	91 50       	subi	r25, 0x01	; 1
+     b8c:	20 40       	sbci	r18, 0x00	; 0
+     b8e:	30 40       	sbci	r19, 0x00	; 0
+     b90:	e1 f7       	brne	.-8      	; 0xb8a <high+0x3c>
+     b92:	00 c0       	rjmp	.+0      	; 0xb94 <high+0x46>
+     b94:	00 00       	nop
+		_delay_ms(3000);		//NS: 3s leuchtet rot & gelb
+		NS_ROT_GELB_AUS;
+     b96:	88 b1       	in	r24, 0x08	; 8
+     b98:	8c 7f       	andi	r24, 0xFC	; 252
+     b9a:	88 b9       	out	0x08, r24	; 8
+		NS_GRUEN_AN;
+     b9c:	42 9a       	sbi	0x08, 2	; 8
+     b9e:	8f ef       	ldi	r24, 0xFF	; 255
+     ba0:	9b e7       	ldi	r25, 0x7B	; 123
+     ba2:	22 e9       	ldi	r18, 0x92	; 146
+     ba4:	81 50       	subi	r24, 0x01	; 1
+     ba6:	90 40       	sbci	r25, 0x00	; 0
+     ba8:	20 40       	sbci	r18, 0x00	; 0
+     baa:	e1 f7       	brne	.-8      	; 0xba4 <high+0x56>
+     bac:	00 c0       	rjmp	.+0      	; 0xbae <high+0x60>
+     bae:	00 00       	nop
+		_delay_ms(3000);		//1:10 (30s) freie NS
+		HS_ROT_GELB_AN;
+     bb0:	29 9a       	sbi	0x05, 1	; 5
+		NS_GRUEN_AUS;
+     bb2:	42 98       	cbi	0x08, 2	; 8
+		NS_GELB_AN;
+     bb4:	41 9a       	sbi	0x08, 1	; 8
+     bb6:	3f ef       	ldi	r19, 0xFF	; 255
+     bb8:	87 ea       	ldi	r24, 0xA7	; 167
+     bba:	91 e6       	ldi	r25, 0x61	; 97
+     bbc:	31 50       	subi	r19, 0x01	; 1
+     bbe:	80 40       	sbci	r24, 0x00	; 0
+     bc0:	90 40       	sbci	r25, 0x00	; 0
+     bc2:	e1 f7       	brne	.-8      	; 0xbbc <high+0x6e>
+     bc4:	00 c0       	rjmp	.+0      	; 0xbc6 <high+0x78>
+     bc6:	00 00       	nop
+		_delay_ms(2000);		//NS: Gelb 2sek.
+		NS_GELB_AUS;
+     bc8:	41 98       	cbi	0x08, 1	; 8
+		NS_ROT_AN;
+     bca:	40 9a       	sbi	0x08, 0	; 8
+     bcc:	2f ef       	ldi	r18, 0xFF	; 255
+     bce:	3b e7       	ldi	r19, 0x7B	; 123
+     bd0:	82 e9       	ldi	r24, 0x92	; 146
+     bd2:	21 50       	subi	r18, 0x01	; 1
+     bd4:	30 40       	sbci	r19, 0x00	; 0
+     bd6:	80 40       	sbci	r24, 0x00	; 0
+     bd8:	e1 f7       	brne	.-8      	; 0xbd2 <high+0x84>
+     bda:	00 c0       	rjmp	.+0      	; 0xbdc <high+0x8e>
+     bdc:	00 00       	nop
+		_delay_ms(3000);		//HS: 3s leuchtet rot & gelb
+		HS_ROT_GELB_AUS;
+     bde:	85 b1       	in	r24, 0x05	; 5
+     be0:	8c 7f       	andi	r24, 0xFC	; 252
+     be2:	85 b9       	out	0x05, r24	; 5
+     be4:	08 95       	ret
+
+00000be6 <low>:
+}
+
+void low(){
+	HS_AUS;
+     be6:	85 b1       	in	r24, 0x05	; 5
+     be8:	88 7f       	andi	r24, 0xF8	; 248
+     bea:	85 b9       	out	0x05, r24	; 5
+	NS_GRUEN_AUS;
+     bec:	42 98       	cbi	0x08, 2	; 8
+	NS_ROT_AUS;
+     bee:	40 98       	cbi	0x08, 0	; 8
+	NS_GELB_AUS;
+     bf0:	41 98       	cbi	0x08, 1	; 8
+     bf2:	2f ef       	ldi	r18, 0xFF	; 255
+     bf4:	8b e7       	ldi	r24, 0x7B	; 123
+     bf6:	92 e9       	ldi	r25, 0x92	; 146
+     bf8:	21 50       	subi	r18, 0x01	; 1
+     bfa:	80 40       	sbci	r24, 0x00	; 0
+     bfc:	90 40       	sbci	r25, 0x00	; 0
+     bfe:	e1 f7       	brne	.-8      	; 0xbf8 <low+0x12>
+     c00:	00 c0       	rjmp	.+0      	; 0xc02 <low+0x1c>
+     c02:	00 00       	nop
+	_delay_ms(3000);
+	NS_GELB_AN;
+     c04:	41 9a       	sbi	0x08, 1	; 8
+     c06:	2f ef       	ldi	r18, 0xFF	; 255
+     c08:	83 ed       	ldi	r24, 0xD3	; 211
+     c0a:	90 e3       	ldi	r25, 0x30	; 48
+     c0c:	21 50       	subi	r18, 0x01	; 1
+     c0e:	80 40       	sbci	r24, 0x00	; 0
+     c10:	90 40       	sbci	r25, 0x00	; 0
+     c12:	e1 f7       	brne	.-8      	; 0xc0c <low+0x26>
+     c14:	00 c0       	rjmp	.+0      	; 0xc16 <low+0x30>
+     c16:	00 00       	nop
+     c18:	08 95       	ret
+
+00000c1a <remote>:
+	_delay_ms(1000);
+}
+
+void remote(){
+	HS_AUS;
+     c1a:	85 b1       	in	r24, 0x05	; 5
+     c1c:	88 7f       	andi	r24, 0xF8	; 248
+     c1e:	85 b9       	out	0x05, r24	; 5
+	NS_AUS;
+     c20:	88 b1       	in	r24, 0x08	; 8
+     c22:	88 7f       	andi	r24, 0xF8	; 248
+     c24:	88 b9       	out	0x08, r24	; 8
+	HS_GRUEN_AN;
+     c26:	2a 9a       	sbi	0x05, 2	; 5
+     c28:	08 95       	ret
+
+00000c2a <firmware_func>:
+		break;
+	}
+}
+
+void firmware_func(){
+	printMenu(firmware_message_menu);
+     c2a:	87 e3       	ldi	r24, 0x37	; 55
+     c2c:	91 e0       	ldi	r25, 0x01	; 1
+     c2e:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	g = USART_Receive();
+     c32:	0e 94 9f 05 	call	0xb3e	; 0xb3e <USART_Receive>
+     c36:	80 93 1f 01 	sts	0x011F, r24
+	USART_Transmit(g);
+     c3a:	80 91 1f 01 	lds	r24, 0x011F
+     c3e:	0e 94 47 05 	call	0xa8e	; 0xa8e <USART_Transmit>
+	uint8_t c = g - 48;
+     c42:	80 91 1f 01 	lds	r24, 0x011F
+     c46:	08 95       	ret
+
+00000c48 <AusgabeBetriebsablaufliste>:
+//------------------------------------------------------
+
+
+void AusgabeBetriebsablaufliste(){
+	
+	printMenu(OutputOperationlist);
+     c48:	8b ef       	ldi	r24, 0xFB	; 251
+     c4a:	90 e0       	ldi	r25, 0x00	; 0
+     c4c:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	
+	//High Freq Operation
+	printMenu(HighOp);
+     c50:	83 ee       	ldi	r24, 0xE3	; 227
+     c52:	90 e0       	ldi	r25, 0x00	; 0
+     c54:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printMenu(OutputWeekday);
+     c58:	82 e9       	ldi	r24, 0x92	; 146
+     c5a:	90 e0       	ldi	r25, 0x00	; 0
+     c5c:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(werktag_starttime_high);
+     c60:	60 91 12 01 	lds	r22, 0x0112
+     c64:	70 e0       	ldi	r23, 0x00	; 0
+     c66:	80 e0       	ldi	r24, 0x00	; 0
+     c68:	90 e0       	ldi	r25, 0x00	; 0
+     c6a:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     c6e:	8b ea       	ldi	r24, 0xAB	; 171
+     c70:	90 e0       	ldi	r25, 0x00	; 0
+     c72:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(werktag_endtime_high+1);
+     c76:	60 91 11 01 	lds	r22, 0x0111
+     c7a:	70 e0       	ldi	r23, 0x00	; 0
+     c7c:	6f 5f       	subi	r22, 0xFF	; 255
+     c7e:	7f 4f       	sbci	r23, 0xFF	; 255
+     c80:	88 27       	eor	r24, r24
+     c82:	77 fd       	sbrc	r23, 7
+     c84:	80 95       	com	r24
+     c86:	98 2f       	mov	r25, r24
+     c88:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputSaturday);
+     c8c:	85 e8       	ldi	r24, 0x85	; 133
+     c8e:	90 e0       	ldi	r25, 0x00	; 0
+     c90:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(saturday_starttime_high);
+     c94:	60 91 0d 01 	lds	r22, 0x010D
+     c98:	70 e0       	ldi	r23, 0x00	; 0
+     c9a:	80 e0       	ldi	r24, 0x00	; 0
+     c9c:	90 e0       	ldi	r25, 0x00	; 0
+     c9e:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     ca2:	8b ea       	ldi	r24, 0xAB	; 171
+     ca4:	90 e0       	ldi	r25, 0x00	; 0
+     ca6:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(saturday_endtime_high+1);
+     caa:	60 91 0c 01 	lds	r22, 0x010C
+     cae:	70 e0       	ldi	r23, 0x00	; 0
+     cb0:	6f 5f       	subi	r22, 0xFF	; 255
+     cb2:	7f 4f       	sbci	r23, 0xFF	; 255
+     cb4:	88 27       	eor	r24, r24
+     cb6:	77 fd       	sbrc	r23, 7
+     cb8:	80 95       	com	r24
+     cba:	98 2f       	mov	r25, r24
+     cbc:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputSunday);
+     cc0:	8a e7       	ldi	r24, 0x7A	; 122
+     cc2:	90 e0       	ldi	r25, 0x00	; 0
+     cc4:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(sunday_starttime_high);
+     cc8:	60 91 06 01 	lds	r22, 0x0106
+     ccc:	70 e0       	ldi	r23, 0x00	; 0
+     cce:	80 e0       	ldi	r24, 0x00	; 0
+     cd0:	90 e0       	ldi	r25, 0x00	; 0
+     cd2:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     cd6:	8b ea       	ldi	r24, 0xAB	; 171
+     cd8:	90 e0       	ldi	r25, 0x00	; 0
+     cda:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(sunday_endtime_high+1);
+     cde:	60 91 05 01 	lds	r22, 0x0105
+     ce2:	70 e0       	ldi	r23, 0x00	; 0
+     ce4:	6f 5f       	subi	r22, 0xFF	; 255
+     ce6:	7f 4f       	sbci	r23, 0xFF	; 255
+     ce8:	88 27       	eor	r24, r24
+     cea:	77 fd       	sbrc	r23, 7
+     cec:	80 95       	com	r24
+     cee:	98 2f       	mov	r25, r24
+     cf0:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	
+	//Low Feq Op
+	printMenu(LowOp);
+     cf4:	8b ec       	ldi	r24, 0xCB	; 203
+     cf6:	90 e0       	ldi	r25, 0x00	; 0
+     cf8:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printMenu(OutputWeekday);
+     cfc:	82 e9       	ldi	r24, 0x92	; 146
+     cfe:	90 e0       	ldi	r25, 0x00	; 0
+     d00:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(werktag_starttime_low);
+     d04:	60 91 10 01 	lds	r22, 0x0110
+     d08:	70 e0       	ldi	r23, 0x00	; 0
+     d0a:	80 e0       	ldi	r24, 0x00	; 0
+     d0c:	90 e0       	ldi	r25, 0x00	; 0
+     d0e:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     d12:	8b ea       	ldi	r24, 0xAB	; 171
+     d14:	90 e0       	ldi	r25, 0x00	; 0
+     d16:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(werktag_endtime_low+1);
+     d1a:	60 91 0f 01 	lds	r22, 0x010F
+     d1e:	70 e0       	ldi	r23, 0x00	; 0
+     d20:	6f 5f       	subi	r22, 0xFF	; 255
+     d22:	7f 4f       	sbci	r23, 0xFF	; 255
+     d24:	88 27       	eor	r24, r24
+     d26:	77 fd       	sbrc	r23, 7
+     d28:	80 95       	com	r24
+     d2a:	98 2f       	mov	r25, r24
+     d2c:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputSaturday);
+     d30:	85 e8       	ldi	r24, 0x85	; 133
+     d32:	90 e0       	ldi	r25, 0x00	; 0
+     d34:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(saturday_starttime_low1);
+     d38:	60 91 0b 01 	lds	r22, 0x010B
+     d3c:	70 e0       	ldi	r23, 0x00	; 0
+     d3e:	80 e0       	ldi	r24, 0x00	; 0
+     d40:	90 e0       	ldi	r25, 0x00	; 0
+     d42:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     d46:	8b ea       	ldi	r24, 0xAB	; 171
+     d48:	90 e0       	ldi	r25, 0x00	; 0
+     d4a:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(saturday_endtime_low1+1);
+     d4e:	60 91 0a 01 	lds	r22, 0x010A
+     d52:	70 e0       	ldi	r23, 0x00	; 0
+     d54:	6f 5f       	subi	r22, 0xFF	; 255
+     d56:	7f 4f       	sbci	r23, 0xFF	; 255
+     d58:	88 27       	eor	r24, r24
+     d5a:	77 fd       	sbrc	r23, 7
+     d5c:	80 95       	com	r24
+     d5e:	98 2f       	mov	r25, r24
+     d60:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputAnd);
+     d64:	85 ea       	ldi	r24, 0xA5	; 165
+     d66:	90 e0       	ldi	r25, 0x00	; 0
+     d68:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(saturday_starttime_low2);
+     d6c:	60 91 09 01 	lds	r22, 0x0109
+     d70:	70 e0       	ldi	r23, 0x00	; 0
+     d72:	80 e0       	ldi	r24, 0x00	; 0
+     d74:	90 e0       	ldi	r25, 0x00	; 0
+     d76:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     d7a:	8b ea       	ldi	r24, 0xAB	; 171
+     d7c:	90 e0       	ldi	r25, 0x00	; 0
+     d7e:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(saturday_endtime_low2+1);
+     d82:	60 91 08 01 	lds	r22, 0x0108
+     d86:	70 e0       	ldi	r23, 0x00	; 0
+     d88:	6f 5f       	subi	r22, 0xFF	; 255
+     d8a:	7f 4f       	sbci	r23, 0xFF	; 255
+     d8c:	88 27       	eor	r24, r24
+     d8e:	77 fd       	sbrc	r23, 7
+     d90:	80 95       	com	r24
+     d92:	98 2f       	mov	r25, r24
+     d94:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputSunday);
+     d98:	8a e7       	ldi	r24, 0x7A	; 122
+     d9a:	90 e0       	ldi	r25, 0x00	; 0
+     d9c:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(sunday_starttime_low1);
+     da0:	60 91 04 01 	lds	r22, 0x0104
+     da4:	70 e0       	ldi	r23, 0x00	; 0
+     da6:	80 e0       	ldi	r24, 0x00	; 0
+     da8:	90 e0       	ldi	r25, 0x00	; 0
+     daa:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     dae:	8b ea       	ldi	r24, 0xAB	; 171
+     db0:	90 e0       	ldi	r25, 0x00	; 0
+     db2:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(sunday_endtime_low1+1);
+     db6:	60 91 03 01 	lds	r22, 0x0103
+     dba:	70 e0       	ldi	r23, 0x00	; 0
+     dbc:	6f 5f       	subi	r22, 0xFF	; 255
+     dbe:	7f 4f       	sbci	r23, 0xFF	; 255
+     dc0:	88 27       	eor	r24, r24
+     dc2:	77 fd       	sbrc	r23, 7
+     dc4:	80 95       	com	r24
+     dc6:	98 2f       	mov	r25, r24
+     dc8:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputAnd);
+     dcc:	85 ea       	ldi	r24, 0xA5	; 165
+     dce:	90 e0       	ldi	r25, 0x00	; 0
+     dd0:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(sunday_starttime_low2);
+     dd4:	60 91 02 01 	lds	r22, 0x0102
+     dd8:	70 e0       	ldi	r23, 0x00	; 0
+     dda:	80 e0       	ldi	r24, 0x00	; 0
+     ddc:	90 e0       	ldi	r25, 0x00	; 0
+     dde:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     de2:	8b ea       	ldi	r24, 0xAB	; 171
+     de4:	90 e0       	ldi	r25, 0x00	; 0
+     de6:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(sunday_endtime_low2+1);
+     dea:	60 91 01 01 	lds	r22, 0x0101
+     dee:	70 e0       	ldi	r23, 0x00	; 0
+     df0:	6f 5f       	subi	r22, 0xFF	; 255
+     df2:	7f 4f       	sbci	r23, 0xFF	; 255
+     df4:	88 27       	eor	r24, r24
+     df6:	77 fd       	sbrc	r23, 7
+     df8:	80 95       	com	r24
+     dfa:	98 2f       	mov	r25, r24
+     dfc:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	
+	//remote freq op
+	printMenu(RemoteOp);
+     e00:	80 eb       	ldi	r24, 0xB0	; 176
+     e02:	90 e0       	ldi	r25, 0x00	; 0
+     e04:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printMenu(OutputWeekday);
+     e08:	82 e9       	ldi	r24, 0x92	; 146
+     e0a:	90 e0       	ldi	r25, 0x00	; 0
+     e0c:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(werktag_starttime_remote);
+     e10:	60 91 1a 01 	lds	r22, 0x011A
+     e14:	70 e0       	ldi	r23, 0x00	; 0
+     e16:	80 e0       	ldi	r24, 0x00	; 0
+     e18:	90 e0       	ldi	r25, 0x00	; 0
+     e1a:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     e1e:	8b ea       	ldi	r24, 0xAB	; 171
+     e20:	90 e0       	ldi	r25, 0x00	; 0
+     e22:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(werktag_endtime_remote+1);
+     e26:	60 91 0e 01 	lds	r22, 0x010E
+     e2a:	70 e0       	ldi	r23, 0x00	; 0
+     e2c:	6f 5f       	subi	r22, 0xFF	; 255
+     e2e:	7f 4f       	sbci	r23, 0xFF	; 255
+     e30:	88 27       	eor	r24, r24
+     e32:	77 fd       	sbrc	r23, 7
+     e34:	80 95       	com	r24
+     e36:	98 2f       	mov	r25, r24
+     e38:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputSaturday);
+     e3c:	85 e8       	ldi	r24, 0x85	; 133
+     e3e:	90 e0       	ldi	r25, 0x00	; 0
+     e40:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(saturday_starttime_remote);
+     e44:	60 91 19 01 	lds	r22, 0x0119
+     e48:	70 e0       	ldi	r23, 0x00	; 0
+     e4a:	80 e0       	ldi	r24, 0x00	; 0
+     e4c:	90 e0       	ldi	r25, 0x00	; 0
+     e4e:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     e52:	8b ea       	ldi	r24, 0xAB	; 171
+     e54:	90 e0       	ldi	r25, 0x00	; 0
+     e56:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(saturday_endtime_remote+1);
+     e5a:	60 91 07 01 	lds	r22, 0x0107
+     e5e:	70 e0       	ldi	r23, 0x00	; 0
+     e60:	6f 5f       	subi	r22, 0xFF	; 255
+     e62:	7f 4f       	sbci	r23, 0xFF	; 255
+     e64:	88 27       	eor	r24, r24
+     e66:	77 fd       	sbrc	r23, 7
+     e68:	80 95       	com	r24
+     e6a:	98 2f       	mov	r25, r24
+     e6c:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputSunday);
+     e70:	8a e7       	ldi	r24, 0x7A	; 122
+     e72:	90 e0       	ldi	r25, 0x00	; 0
+     e74:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(sunday_starttime_remote);
+     e78:	60 91 18 01 	lds	r22, 0x0118
+     e7c:	70 e0       	ldi	r23, 0x00	; 0
+     e7e:	80 e0       	ldi	r24, 0x00	; 0
+     e80:	90 e0       	ldi	r25, 0x00	; 0
+     e82:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+	printMenu(OutputTo);
+     e86:	8b ea       	ldi	r24, 0xAB	; 171
+     e88:	90 e0       	ldi	r25, 0x00	; 0
+     e8a:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	printUI(sunday_endtime_remote+1);
+     e8e:	60 91 00 01 	lds	r22, 0x0100
+     e92:	70 e0       	ldi	r23, 0x00	; 0
+     e94:	6f 5f       	subi	r22, 0xFF	; 255
+     e96:	7f 4f       	sbci	r23, 0xFF	; 255
+     e98:	88 27       	eor	r24, r24
+     e9a:	77 fd       	sbrc	r23, 7
+     e9c:	80 95       	com	r24
+     e9e:	98 2f       	mov	r25, r24
+     ea0:	0e 94 64 05 	call	0xac8	; 0xac8 <printUI>
+     ea4:	08 95       	ret
+
+00000ea6 <configuration_func>:
+		//Fehler
+	}
+}
+
+void configuration_func(){
+	printMenu(configuration_message_menu);
+     ea6:	8c e0       	ldi	r24, 0x0C	; 12
+     ea8:	96 e0       	ldi	r25, 0x06	; 6
+     eaa:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	g = USART_Receive();
+     eae:	0e 94 9f 05 	call	0xb3e	; 0xb3e <USART_Receive>
+     eb2:	80 93 1f 01 	sts	0x011F, r24
+	USART_Transmit(g);
+     eb6:	80 91 1f 01 	lds	r24, 0x011F
+     eba:	0e 94 47 05 	call	0xa8e	; 0xa8e <USART_Transmit>
+	uint8_t c = g - 48;
+     ebe:	80 91 1f 01 	lds	r24, 0x011F
+     ec2:	80 53       	subi	r24, 0x30	; 48
+	switch(c){
+     ec4:	29 f0       	breq	.+10     	; 0xed0 <configuration_func+0x2a>
+     ec6:	84 30       	cpi	r24, 0x04	; 4
+     ec8:	29 f4       	brne	.+10     	; 0xed4 <configuration_func+0x2e>
+		case state_request:
+		break;
+		case state_change:
+		break;
+		case operational_flow_read:
+			AusgabeBetriebsablaufliste();
+     eca:	0e 94 24 06 	call	0xc48	; 0xc48 <AusgabeBetriebsablaufliste>
+		break;
+     ece:	08 95       	ret
+		case date_read:
+		break;
+		case date_change:
+		break;
+		case return_to_main_menu1:
+			mainmenu_func();
+     ed0:	0e 94 6b 07 	call	0xed6	; 0xed6 <mainmenu_func>
+     ed4:	08 95       	ret
+
+00000ed6 <mainmenu_func>:
+const char OutputSunday[] PROGMEM = "\n\tSunday: ";
+
+//**************************************************************************************************************************************//
+
+void mainmenu_func() {
+		printMenu(mainMenu_message_menu);
+     ed6:	8c ef       	ldi	r24, 0xFC	; 252
+     ed8:	96 e0       	ldi	r25, 0x06	; 6
+     eda:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+		g = USART_Receive();
+     ede:	0e 94 9f 05 	call	0xb3e	; 0xb3e <USART_Receive>
+     ee2:	80 93 1f 01 	sts	0x011F, r24
+		USART_Transmit(g);
+     ee6:	80 91 1f 01 	lds	r24, 0x011F
+     eea:	0e 94 47 05 	call	0xa8e	; 0xa8e <USART_Transmit>
+		uint8_t c = g - 48;
+     eee:	80 91 1f 01 	lds	r24, 0x011F
+     ef2:	80 53       	subi	r24, 0x30	; 48
+	switch(c){
+     ef4:	82 30       	cpi	r24, 0x02	; 2
+     ef6:	61 f0       	breq	.+24     	; 0xf10 <mainmenu_func+0x3a>
+     ef8:	18 f4       	brcc	.+6      	; 0xf00 <mainmenu_func+0x2a>
+     efa:	81 30       	cpi	r24, 0x01	; 1
+     efc:	31 f0       	breq	.+12     	; 0xf0a <mainmenu_func+0x34>
+     efe:	08 95       	ret
+     f00:	83 30       	cpi	r24, 0x03	; 3
+     f02:	49 f0       	breq	.+18     	; 0xf16 <mainmenu_func+0x40>
+     f04:	84 30       	cpi	r24, 0x04	; 4
+     f06:	51 f0       	breq	.+20     	; 0xf1c <mainmenu_func+0x46>
+     f08:	08 95       	ret
+		case configuration:
+			configuration_func();
+     f0a:	0e 94 53 07 	call	0xea6	; 0xea6 <configuration_func>
+		break;
+     f0e:	08 95       	ret
+		case install:
+			install_func();
+     f10:	0e 94 91 07 	call	0xf22	; 0xf22 <install_func>
+		break;
+     f14:	08 95       	ret
+		case errors:
+			error_func();
+     f16:	0e 94 a4 07 	call	0xf48	; 0xf48 <error_func>
+		break;
+     f1a:	08 95       	ret
+		case firmware:
+			firmware_func();
+     f1c:	0e 94 15 06 	call	0xc2a	; 0xc2a <firmware_func>
+     f20:	08 95       	ret
+
+00000f22 <install_func>:
+		break;
+	}
+}
+
+void install_func(){
+	printMenu(install_message_menu);
+     f22:	80 e8       	ldi	r24, 0x80	; 128
+     f24:	95 e0       	ldi	r25, 0x05	; 5
+     f26:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	g = USART_Receive();
+     f2a:	0e 94 9f 05 	call	0xb3e	; 0xb3e <USART_Receive>
+     f2e:	80 93 1f 01 	sts	0x011F, r24
+	USART_Transmit(g);
+     f32:	80 91 1f 01 	lds	r24, 0x011F
+     f36:	0e 94 47 05 	call	0xa8e	; 0xa8e <USART_Transmit>
+	uint8_t c = g - 48;
+     f3a:	80 91 1f 01 	lds	r24, 0x011F
+	switch(c){
+     f3e:	80 33       	cpi	r24, 0x30	; 48
+     f40:	11 f4       	brne	.+4      	; 0xf46 <install_func+0x24>
+		case lights_install:
+		break;
+		case lights_deinstall:
+		break;
+		case return_to_main_menu2:
+			mainmenu_func();
+     f42:	0e 94 6b 07 	call	0xed6	; 0xed6 <mainmenu_func>
+     f46:	08 95       	ret
+
+00000f48 <error_func>:
+		break;
+	}
+}
+
+void error_func(){
+	printMenu(errors_message_menu);
+     f48:	8b e8       	ldi	r24, 0x8B	; 139
+     f4a:	94 e0       	ldi	r25, 0x04	; 4
+     f4c:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+	g = USART_Receive();
+     f50:	0e 94 9f 05 	call	0xb3e	; 0xb3e <USART_Receive>
+     f54:	80 93 1f 01 	sts	0x011F, r24
+	USART_Transmit(g);
+     f58:	80 91 1f 01 	lds	r24, 0x011F
+     f5c:	0e 94 47 05 	call	0xa8e	; 0xa8e <USART_Transmit>
+	uint8_t c = g - 48;
+     f60:	80 91 1f 01 	lds	r24, 0x011F
+     f64:	80 53       	subi	r24, 0x30	; 48
+	switch(c){
+     f66:	90 e0       	ldi	r25, 0x00	; 0
+     f68:	89 30       	cpi	r24, 0x09	; 9
+     f6a:	91 05       	cpc	r25, r1
+     f6c:	78 f5       	brcc	.+94     	; 0xfcc <error_func+0x84>
+     f6e:	fc 01       	movw	r30, r24
+     f70:	ec 5c       	subi	r30, 0xCC	; 204
+     f72:	ff 4f       	sbci	r31, 0xFF	; 255
+     f74:	0c 94 f4 08 	jmp	0x11e8	; 0x11e8 <__tablejump2__>
+		case no_error:
+			printMenu(No_Error_Message);
+     f78:	8b e4       	ldi	r24, 0x4B	; 75
+     f7a:	94 e0       	ldi	r25, 0x04	; 4
+     f7c:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+		break;
+     f80:	08 95       	ret
+		case red_light_mr:
+			printMenu(Red_Light_MR_Message);
+     f82:	8a ec       	ldi	r24, 0xCA	; 202
+     f84:	93 e0       	ldi	r25, 0x03	; 3
+     f86:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+		break;
+     f8a:	08 95       	ret
+		case red_light_sr:
+			printMenu(Red_Light_SR_Message);
+     f8c:	89 e4       	ldi	r24, 0x49	; 73
+     f8e:	93 e0       	ldi	r25, 0x03	; 3
+     f90:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+		break;
+     f94:	08 95       	ret
+		case flash_error:
+			printMenu(Flash_Error_Message);
+     f96:	84 ee       	ldi	r24, 0xE4	; 228
+     f98:	92 e0       	ldi	r25, 0x02	; 2
+     f9a:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+		break;
+     f9e:	08 95       	ret
+		case sram_error:
+			printMenu(SRAM_Error_Message);
+     fa0:	8a e8       	ldi	r24, 0x8A	; 138
+     fa2:	92 e0       	ldi	r25, 0x02	; 2
+     fa4:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+		break;
+     fa8:	08 95       	ret
+		case stack_error:
+			printMenu(Stack_Error_Message);
+     faa:	87 e4       	ldi	r24, 0x47	; 71
+     fac:	92 e0       	ldi	r25, 0x02	; 2
+     fae:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+		break;
+     fb2:	08 95       	ret
+		case sw_error:
+			printMenu(SW_Error_Message);
+     fb4:	8a ef       	ldi	r24, 0xFA	; 250
+     fb6:	91 e0       	ldi	r25, 0x01	; 1
+     fb8:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+		break;
+     fbc:	08 95       	ret
+		case time_error:
+			printMenu(Time_Error_Message);
+     fbe:	8a ea       	ldi	r24, 0xAA	; 170
+     fc0:	91 e0       	ldi	r25, 0x01	; 1
+     fc2:	0e 94 4f 05 	call	0xa9e	; 0xa9e <printMenu>
+		break;
+     fc6:	08 95       	ret
+		case return_to_main_menu3:
+			mainmenu_func();
+     fc8:	0e 94 6b 07 	call	0xed6	; 0xed6 <mainmenu_func>
+     fcc:	08 95       	ret
+
+00000fce <main>:
+#include "uart.h"
+#include "menu.h"
+
+
+int main(void){
+    init();
+     fce:	0e 94 b4 04 	call	0x968	; 0x968 <init>
+	USART_Init();
+     fd2:	0e 94 3c 05 	call	0xa78	; 0xa78 <USART_Init>
+		timer_t[i].callback = NULL;
+	}
+}
+
+void declareTimer(uint8_t t, uint32_t time, void (*fun)()) {
+	timer_t[t].duration = time;
+     fd6:	84 ef       	ldi	r24, 0xF4	; 244
+     fd8:	91 e0       	ldi	r25, 0x01	; 1
+     fda:	a0 e0       	ldi	r26, 0x00	; 0
+     fdc:	b0 e0       	ldi	r27, 0x00	; 0
+     fde:	80 93 2f 01 	sts	0x012F, r24
+     fe2:	90 93 30 01 	sts	0x0130, r25
+     fe6:	a0 93 31 01 	sts	0x0131, r26
+     fea:	b0 93 32 01 	sts	0x0132, r27
+	timer_t[t].declare = 1;
+     fee:	81 e0       	ldi	r24, 0x01	; 1
+     ff0:	80 93 3b 01 	sts	0x013B, r24
+	timer_t[t].callback = fun;
+     ff4:	8b ee       	ldi	r24, 0xEB	; 235
+     ff6:	93 e0       	ldi	r25, 0x03	; 3
+     ff8:	90 93 3d 01 	sts	0x013D, r25
+     ffc:	80 93 3c 01 	sts	0x013C, r24
+}
+
+void startTimer(uint8_t t){
+	timer_t[t].run = 1;
+    1000:	81 e0       	ldi	r24, 0x01	; 1
+    1002:	90 e0       	ldi	r25, 0x00	; 0
+    1004:	a0 e0       	ldi	r26, 0x00	; 0
+    1006:	b0 e0       	ldi	r27, 0x00	; 0
+    1008:	80 93 37 01 	sts	0x0137, r24
+    100c:	90 93 38 01 	sts	0x0138, r25
+    1010:	a0 93 39 01 	sts	0x0139, r26
+    1014:	b0 93 3a 01 	sts	0x013A, r27
+	timer_t[t].timerCounter = 0;
+    1018:	10 92 33 01 	sts	0x0133, r1
+    101c:	10 92 34 01 	sts	0x0134, r1
+    1020:	10 92 35 01 	sts	0x0135, r1
+    1024:	10 92 36 01 	sts	0x0136, r1
+		
+	declareTimer(TIMER500MS, 500, taster);
+	startTimer(TIMER500MS);
+		
+	//interrupt enable
+	sei();
+    1028:	78 94       	sei
+	
+	// Testtage und -stunden
+	day = sunday;
+    102a:	87 e0       	ldi	r24, 0x07	; 7
+    102c:	80 93 6e 01 	sts	0x016E, r24
+	hour = 13;
+    1030:	8d e0       	ldi	r24, 0x0D	; 13
+    1032:	80 93 1c 01 	sts	0x011C, r24
+*/
+		mainmenu_func();
+		
+		if (hour == 0){
+			if (day == sunday){
+				day = monday;
+    1036:	c1 e0       	ldi	r28, 0x01	; 1
+			}
+			break;
+			case saturday:
+			//Start und Endzeiten fuer Samstagszustaende
+			if((hour >= saturday_starttime_remote) && (hour < saturday_endtime_remote)){
+				status = remotefreq;
+    1038:	12 e0       	ldi	r17, 0x02	; 2
+				status = highfreq;	
+				high();
+			}
+			break;
+			default:
+				status = degradedfreq;
+    103a:	d3 e0       	ldi	r29, 0x03	; 3
+			USART_Transmit(c);
+			USART_Transmit(0x0d);
+		}
+		selection = c - 48;	//Notwendig da wir einen char als Eingabe haben und dieser im ASCII-Code zu einem Integer runtergerechnet werden muss
+*/
+		mainmenu_func();
+    103c:	0e 94 6b 07 	call	0xed6	; 0xed6 <mainmenu_func>
+		
+		if (hour == 0){
+    1040:	80 91 1c 01 	lds	r24, 0x011C
+    1044:	81 11       	cpse	r24, r1
+    1046:	0c c0       	rjmp	.+24     	; 0x1060 <main+0x92>
+			if (day == sunday){
+    1048:	80 91 6e 01 	lds	r24, 0x016E
+    104c:	87 30       	cpi	r24, 0x07	; 7
+    104e:	19 f4       	brne	.+6      	; 0x1056 <main+0x88>
+				day = monday;
+    1050:	c0 93 6e 01 	sts	0x016E, r28
+    1054:	05 c0       	rjmp	.+10     	; 0x1060 <main+0x92>
+			}
+			else
+				day++;
+    1056:	80 91 6e 01 	lds	r24, 0x016E
+    105a:	8f 5f       	subi	r24, 0xFF	; 255
+    105c:	80 93 6e 01 	sts	0x016E, r24
+		}
+
+		switch (day){
+    1060:	80 91 6e 01 	lds	r24, 0x016E
+    1064:	86 30       	cpi	r24, 0x06	; 6
+    1066:	e9 f1       	breq	.+122    	; 0x10e2 <main+0x114>
+    1068:	18 f4       	brcc	.+6      	; 0x1070 <main+0xa2>
+    106a:	81 30       	cpi	r24, 0x01	; 1
+    106c:	28 f4       	brcc	.+10     	; 0x1078 <main+0xaa>
+    106e:	b9 c0       	rjmp	.+370    	; 0x11e2 <main+0x214>
+    1070:	87 30       	cpi	r24, 0x07	; 7
+    1072:	09 f4       	brne	.+2      	; 0x1076 <main+0xa8>
+    1074:	75 c0       	rjmp	.+234    	; 0x1160 <main+0x192>
+    1076:	b5 c0       	rjmp	.+362    	; 0x11e2 <main+0x214>
+			case tuesday:
+			case wednesday:
+			case thursday:
+			case friday:
+			//start - end Zeiten fuer Werktagzustaende
+			if((hour >= werktag_starttime_remote) && (hour < werktag_endtime_remote)){
+    1078:	90 91 1c 01 	lds	r25, 0x011C
+    107c:	80 91 1a 01 	lds	r24, 0x011A
+    1080:	98 17       	cp	r25, r24
+    1082:	58 f0       	brcs	.+22     	; 0x109a <main+0xcc>
+    1084:	90 91 1c 01 	lds	r25, 0x011C
+    1088:	80 91 0e 01 	lds	r24, 0x010E
+    108c:	98 17       	cp	r25, r24
+    108e:	28 f4       	brcc	.+10     	; 0x109a <main+0xcc>
+				status = remotefreq;
+    1090:	10 93 70 01 	sts	0x0170, r17
+				remote();
+    1094:	0e 94 0d 06 	call	0xc1a	; 0xc1a <remote>
+    1098:	d1 cf       	rjmp	.-94     	; 0x103c <main+0x6e>
+			}
+			else if((hour >= werktag_starttime_high) && (hour < werktag_endtime_high)){
+    109a:	90 91 1c 01 	lds	r25, 0x011C
+    109e:	80 91 12 01 	lds	r24, 0x0112
+    10a2:	98 17       	cp	r25, r24
+    10a4:	58 f0       	brcs	.+22     	; 0x10bc <main+0xee>
+    10a6:	90 91 1c 01 	lds	r25, 0x011C
+    10aa:	80 91 11 01 	lds	r24, 0x0111
+    10ae:	98 17       	cp	r25, r24
+    10b0:	28 f4       	brcc	.+10     	; 0x10bc <main+0xee>
+				status = highfreq;
+    10b2:	10 92 70 01 	sts	0x0170, r1
+				high();
+    10b6:	0e 94 a7 05 	call	0xb4e	; 0xb4e <high>
+    10ba:	c0 cf       	rjmp	.-128    	; 0x103c <main+0x6e>
+			}
+			else if ((hour >= werktag_starttime_low) && (hour <= werktag_endtime_low)){
+    10bc:	90 91 1c 01 	lds	r25, 0x011C
+    10c0:	80 91 10 01 	lds	r24, 0x0110
+    10c4:	98 17       	cp	r25, r24
+    10c6:	08 f4       	brcc	.+2      	; 0x10ca <main+0xfc>
+    10c8:	b9 cf       	rjmp	.-142    	; 0x103c <main+0x6e>
+    10ca:	90 91 1c 01 	lds	r25, 0x011C
+    10ce:	80 91 0f 01 	lds	r24, 0x010F
+    10d2:	89 17       	cp	r24, r25
+    10d4:	08 f4       	brcc	.+2      	; 0x10d8 <main+0x10a>
+    10d6:	b2 cf       	rjmp	.-156    	; 0x103c <main+0x6e>
+				status = lowfreq;
+    10d8:	c0 93 70 01 	sts	0x0170, r28
+				low();
+    10dc:	0e 94 f3 05 	call	0xbe6	; 0xbe6 <low>
+    10e0:	ad cf       	rjmp	.-166    	; 0x103c <main+0x6e>
+			}
+			break;
+			case saturday:
+			//Start und Endzeiten fuer Samstagszustaende
+			if((hour >= saturday_starttime_remote) && (hour < saturday_endtime_remote)){
+    10e2:	90 91 1c 01 	lds	r25, 0x011C
+    10e6:	80 91 19 01 	lds	r24, 0x0119
+    10ea:	98 17       	cp	r25, r24
+    10ec:	58 f0       	brcs	.+22     	; 0x1104 <main+0x136>
+    10ee:	90 91 1c 01 	lds	r25, 0x011C
+    10f2:	80 91 07 01 	lds	r24, 0x0107
+    10f6:	98 17       	cp	r25, r24
+    10f8:	28 f4       	brcc	.+10     	; 0x1104 <main+0x136>
+				status = remotefreq;
+    10fa:	10 93 70 01 	sts	0x0170, r17
+				remote();
+    10fe:	0e 94 0d 06 	call	0xc1a	; 0xc1a <remote>
+    1102:	9c cf       	rjmp	.-200    	; 0x103c <main+0x6e>
+			}
+			else if(((hour >= saturday_starttime_low1) && (hour < saturday_endtime_low1)) || ((saturday_starttime_low2 >= 22 && hour <= saturday_endtime_low2))){
+    1104:	90 91 1c 01 	lds	r25, 0x011C
+    1108:	80 91 0b 01 	lds	r24, 0x010B
+    110c:	98 17       	cp	r25, r24
+    110e:	30 f0       	brcs	.+12     	; 0x111c <main+0x14e>
+    1110:	90 91 1c 01 	lds	r25, 0x011C
+    1114:	80 91 0a 01 	lds	r24, 0x010A
+    1118:	98 17       	cp	r25, r24
+    111a:	50 f0       	brcs	.+20     	; 0x1130 <main+0x162>
+    111c:	80 91 09 01 	lds	r24, 0x0109
+    1120:	86 31       	cpi	r24, 0x16	; 22
+    1122:	58 f0       	brcs	.+22     	; 0x113a <main+0x16c>
+    1124:	90 91 1c 01 	lds	r25, 0x011C
+    1128:	80 91 08 01 	lds	r24, 0x0108
+    112c:	89 17       	cp	r24, r25
+    112e:	28 f0       	brcs	.+10     	; 0x113a <main+0x16c>
+				status = lowfreq;
+    1130:	c0 93 70 01 	sts	0x0170, r28
+				low();
+    1134:	0e 94 f3 05 	call	0xbe6	; 0xbe6 <low>
+    1138:	81 cf       	rjmp	.-254    	; 0x103c <main+0x6e>
+			}
+			else if ((hour >= saturday_starttime_high) && (hour < saturday_endtime_high)){
+    113a:	90 91 1c 01 	lds	r25, 0x011C
+    113e:	80 91 0d 01 	lds	r24, 0x010D
+    1142:	98 17       	cp	r25, r24
+    1144:	08 f4       	brcc	.+2      	; 0x1148 <main+0x17a>
+    1146:	7a cf       	rjmp	.-268    	; 0x103c <main+0x6e>
+    1148:	90 91 1c 01 	lds	r25, 0x011C
+    114c:	80 91 0c 01 	lds	r24, 0x010C
+    1150:	98 17       	cp	r25, r24
+    1152:	08 f0       	brcs	.+2      	; 0x1156 <main+0x188>
+    1154:	73 cf       	rjmp	.-282    	; 0x103c <main+0x6e>
+				status = highfreq;
+    1156:	10 92 70 01 	sts	0x0170, r1
+				high();
+    115a:	0e 94 a7 05 	call	0xb4e	; 0xb4e <high>
+    115e:	6e cf       	rjmp	.-292    	; 0x103c <main+0x6e>
+			}
+			break;
+			case sunday:
+			//Start und Endzeiten fuer Sonntagszustaende
+			if((hour >= sunday_starttime_remote) && (hour < sunday_endtime_remote)){
+    1160:	90 91 1c 01 	lds	r25, 0x011C
+    1164:	80 91 18 01 	lds	r24, 0x0118
+    1168:	98 17       	cp	r25, r24
+    116a:	58 f0       	brcs	.+22     	; 0x1182 <main+0x1b4>
+    116c:	90 91 1c 01 	lds	r25, 0x011C
+    1170:	80 91 00 01 	lds	r24, 0x0100
+    1174:	98 17       	cp	r25, r24
+    1176:	28 f4       	brcc	.+10     	; 0x1182 <main+0x1b4>
+				status = remotefreq;
+    1178:	10 93 70 01 	sts	0x0170, r17
+				remote();
+    117c:	0e 94 0d 06 	call	0xc1a	; 0xc1a <remote>
+    1180:	5d cf       	rjmp	.-326    	; 0x103c <main+0x6e>
+			}
+			else if(((hour >= sunday_starttime_low1) && (hour < sunday_endtime_low1)) || ((hour >= sunday_starttime_low2) && (hour <= sunday_endtime_low2))){
+    1182:	90 91 1c 01 	lds	r25, 0x011C
+    1186:	80 91 04 01 	lds	r24, 0x0104
+    118a:	98 17       	cp	r25, r24
+    118c:	30 f0       	brcs	.+12     	; 0x119a <main+0x1cc>
+    118e:	90 91 1c 01 	lds	r25, 0x011C
+    1192:	80 91 03 01 	lds	r24, 0x0103
+    1196:	98 17       	cp	r25, r24
+    1198:	60 f0       	brcs	.+24     	; 0x11b2 <main+0x1e4>
+    119a:	90 91 1c 01 	lds	r25, 0x011C
+    119e:	80 91 02 01 	lds	r24, 0x0102
+    11a2:	98 17       	cp	r25, r24
+    11a4:	58 f0       	brcs	.+22     	; 0x11bc <main+0x1ee>
+    11a6:	90 91 1c 01 	lds	r25, 0x011C
+    11aa:	80 91 01 01 	lds	r24, 0x0101
+    11ae:	89 17       	cp	r24, r25
+    11b0:	28 f0       	brcs	.+10     	; 0x11bc <main+0x1ee>
+				status = lowfreq;
+    11b2:	c0 93 70 01 	sts	0x0170, r28
+				low();
+    11b6:	0e 94 f3 05 	call	0xbe6	; 0xbe6 <low>
+    11ba:	40 cf       	rjmp	.-384    	; 0x103c <main+0x6e>
+			}
+			else if ((hour >= sunday_starttime_high) && (hour < sunday_endtime_high)){
+    11bc:	90 91 1c 01 	lds	r25, 0x011C
+    11c0:	80 91 06 01 	lds	r24, 0x0106
+    11c4:	98 17       	cp	r25, r24
+    11c6:	08 f4       	brcc	.+2      	; 0x11ca <main+0x1fc>
+    11c8:	39 cf       	rjmp	.-398    	; 0x103c <main+0x6e>
+    11ca:	90 91 1c 01 	lds	r25, 0x011C
+    11ce:	80 91 05 01 	lds	r24, 0x0105
+    11d2:	98 17       	cp	r25, r24
+    11d4:	08 f0       	brcs	.+2      	; 0x11d8 <main+0x20a>
+    11d6:	32 cf       	rjmp	.-412    	; 0x103c <main+0x6e>
+				status = highfreq;	
+    11d8:	10 92 70 01 	sts	0x0170, r1
+				high();
+    11dc:	0e 94 a7 05 	call	0xb4e	; 0xb4e <high>
+    11e0:	2d cf       	rjmp	.-422    	; 0x103c <main+0x6e>
+			}
+			break;
+			default:
+				status = degradedfreq;
+    11e2:	d0 93 70 01 	sts	0x0170, r29
+				//Fehlermeldung
+			break;
+    11e6:	2a cf       	rjmp	.-428    	; 0x103c <main+0x6e>
+
+000011e8 <__tablejump2__>:
+    11e8:	ee 0f       	add	r30, r30
+    11ea:	ff 1f       	adc	r31, r31
+
+000011ec <__tablejump__>:
+    11ec:	05 90       	lpm	r0, Z+
+    11ee:	f4 91       	lpm	r31, Z
+    11f0:	e0 2d       	mov	r30, r0
+    11f2:	09 94       	ijmp
+
+000011f4 <__ultoa_ncheck>:
+    11f4:	bb 27       	eor	r27, r27
+
+000011f6 <__ultoa_common>:
+    11f6:	fa 01       	movw	r30, r20
+    11f8:	a6 2f       	mov	r26, r22
+    11fa:	62 17       	cp	r22, r18
+    11fc:	71 05       	cpc	r23, r1
+    11fe:	81 05       	cpc	r24, r1
+    1200:	91 05       	cpc	r25, r1
+    1202:	33 0b       	sbc	r19, r19
+    1204:	30 fb       	bst	r19, 0
+    1206:	66 f0       	brts	.+24     	; 0x1220 <__ultoa_common+0x2a>
+    1208:	aa 27       	eor	r26, r26
+    120a:	66 0f       	add	r22, r22
+    120c:	77 1f       	adc	r23, r23
+    120e:	88 1f       	adc	r24, r24
+    1210:	99 1f       	adc	r25, r25
+    1212:	aa 1f       	adc	r26, r26
+    1214:	a2 17       	cp	r26, r18
+    1216:	10 f0       	brcs	.+4      	; 0x121c <__ultoa_common+0x26>
+    1218:	a2 1b       	sub	r26, r18
+    121a:	63 95       	inc	r22
+    121c:	38 50       	subi	r19, 0x08	; 8
+    121e:	a9 f7       	brne	.-22     	; 0x120a <__ultoa_common+0x14>
+    1220:	a0 5d       	subi	r26, 0xD0	; 208
+    1222:	aa 33       	cpi	r26, 0x3A	; 58
+    1224:	08 f0       	brcs	.+2      	; 0x1228 <__ultoa_common+0x32>
+    1226:	a9 5d       	subi	r26, 0xD9	; 217
+    1228:	a1 93       	st	Z+, r26
+    122a:	36 f7       	brtc	.-52     	; 0x11f8 <__ultoa_common+0x2>
+    122c:	b1 11       	cpse	r27, r1
+    122e:	b1 93       	st	Z+, r27
+    1230:	10 82       	st	Z, r1
+    1232:	ca 01       	movw	r24, r20
+    1234:	0c 94 1c 09 	jmp	0x1238	; 0x1238 <strrev>
+
+00001238 <strrev>:
+    1238:	dc 01       	movw	r26, r24
+    123a:	fc 01       	movw	r30, r24
+    123c:	67 2f       	mov	r22, r23
+    123e:	71 91       	ld	r23, Z+
+    1240:	77 23       	and	r23, r23
+    1242:	e1 f7       	brne	.-8      	; 0x123c <strrev+0x4>
+    1244:	32 97       	sbiw	r30, 0x02	; 2
+    1246:	04 c0       	rjmp	.+8      	; 0x1250 <strrev+0x18>
+    1248:	7c 91       	ld	r23, X
+    124a:	6d 93       	st	X+, r22
+    124c:	70 83       	st	Z, r23
+    124e:	62 91       	ld	r22, -Z
+    1250:	ae 17       	cp	r26, r30
+    1252:	bf 07       	cpc	r27, r31
+    1254:	c8 f3       	brcs	.-14     	; 0x1248 <strrev+0x10>
+    1256:	08 95       	ret
+
+00001258 <_exit>:
+    1258:	f8 94       	cli
+
+0000125a <__stop_program>:
+    125a:	ff cf       	rjmp	.-2      	; 0x125a <__stop_program>
